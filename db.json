@@ -64,12 +64,57 @@
     "books":[
     {
       "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
-      "book_name": "Harry Potter and the Philosopher's Stone",
-      "author": "J. K. Rowling",
+      "book_name": "The India Story",
+      "author": "Bimal Jalal",
       "genre": "fiction",
       "edition": "2021",
       "publisher": "Bloomsbury",
       "cost": 1299
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "Listen to Your Heart: The London Adventure",
+      "author": "Ruskin Bond",
+      "genre": "fiction",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": 1000
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "Business of Sports: The Winning Formula for Success",
+      "author": "Vinit Karnik",
+      "genre": "business",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": 500
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "A Place Called Home",
+      "author": "Preeti Shenoy",
+      "genre": "fiction",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": 300
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "Modi @20: Dreams Meeting Delivery",
+      "author": "VP Venkaiah Naidu",
+      "genre": "tech",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost":200
+    },
+    {
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "The Struggle for Police Reforms in India",
+      "author": "Ex-IPS Prakash Singh",
+      "genre": "history",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": 750
     }
   ]
   
