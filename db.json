@@ -8,7 +8,43 @@
 ],
 "cart":[
     
-]
-
+],
+"product":[
+    {
+        "id":0,
+        "title":"IPhone 11",
+        "price":500,
+        "desc":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text",
+        "img":"https://images.unsplash.com/photo-1609654984575-f64878202abf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGlwaG9uZSUyMDEwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":1,
+        "title":"IPhone 11 pro",
+        "price":700,
+        "desc":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text",
+        "img":"https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aXBob25lJTIwMTB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":2,
+        "title":"IPhone 11 pro max",
+        "price":800,
+        "desc":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text",
+        "img":"https://images.unsplash.com/photo-1589798312995-8428138bb1ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aXBob25lJTIwMTB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":3,
+        "title":"IPhone 11 ultra",
+        "price":900,
+        "desc":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text",
+        "img":"https://images.unsplash.com/photo-1603921326210-6edd2d60ca68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aXBob25lJTIwMTB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":4,
+        "title":"IPhone 11 ultra pro max",
+        "price":1000,
+        "desc":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text",
+        "img":"https://images.unsplash.com/photo-1603816245457-fe9c80b740ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGlwaG9uZSUyMDEwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    }
+] 
   
 }
