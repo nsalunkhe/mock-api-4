@@ -54,18 +54,43 @@
         "id":1,
          "question":"What is React.js? How does it differ from other Frontend frameworks?",
          "answer":"React.js is a open-source-js library used to build user interfaces(UI) for web applications. It is developed by Jordan Walke (Facebook) and maintained by community of developers . one of the mai  difference between React.js and other frameworks is it's approach to rendering it uses Virtual Dom instead of directly manipulating the browsers Dom . React.js can update the ui more efficiently by only updating trhe parts of the page that have changed ,rather than updating the entire page .React.js focus on buildingreusable components React components are independent ,reusable pieces of code that can be combined to create complex UI's. this enables developers to write less code and makes it easier .overall React.js is a powerfull tool for building dynamic ,responsive and scalable user interfaces for web applications .It is based on declerative programming ,Which means that you describe what you want the UI look like and react.js handles the updates and rendering . It can be used to build single page applications (SPA's) which are web applications that load a single HTML page and dynamically update the content as the user interacts with the application . React.js is used by many popular websites and applications including Facebook,Instagram,NetFlix,Airbnb.It has large active comunity of developers who contribute to the library."
-
+         ,"code":""
     },
     {
         "id":2,
         "question":"Can youn explain concept of the Virtual DOM in React.js?",
         "answer":"In traditional web applications ,The browser's DOM is used to represent the structure of the web page .The DOM is a tree like structure of HTML elements, and each time the state of an application changes ,the browser has to update the DOM to reflest those changes .This process is called reconcillation and it canbe slow and resource-intensive, especially for complex user interfaces .React.js addresses this issue by using a virtual DOM ,The virtual DOM is a lightweight representation of the actual DOM ,created and maintained by React.js whenever the state of a react component changes ,React.js compares the updated virtual DOM to the previous version to identify the specific changes that need to be made to actual DOM rather than updating the entire DOM it only updates the changes results in faster rendering times and a smoother user experience Real DOM------Lightweight copy of virtual DOM (Update)----->update real DOM with those changes . "
-
+        ,"code":""
     },
     {
         "id":3,
         "question":"what are react components and how they work?",
-        "answer":"React components are independent , reusable pieces of code that define part of a user interface in ract application it canbe simple such as a button or a form field or complex ,such as a chart or a data grid .By composing these components together you can create more complex UI's  .React Components are divided into two types 1. Functional Component 2. Class Component . Functional Component: are just JavaScript functions that take in props and return jsx. functional component dont have state,but they can use useState hook to achieve similar functionality. functional components don't have lifecycle methods but they can use useEffect hook to achieve similar functionality. functional components are more resuable as they are just functions which can be easily reused across multiple components. functional components are usually faster and more efficient than class components.It can not use this keyword. it use return to render jsx. Class Component: Class Components are classes that extend the React Component Class and have a render method.class components have state, which is used to store data that can be change over time.class components havelifecycle methods which are methods that get called at diffirent points in the component's lifecycle . the class components are less reusable due to the complex inheritance hierchy and render methods. it uses this keyword to refer their own instance. use render method to render jsx    "
+        "answer":"React components are independent , reusable pieces of code that define part of a user interface in ract application it canbe simple such as a button or a form field or complex ,such as a chart or a data grid .By composing these components together you can create more complex UI's  .React Components are divided into two types 1. Functional Component 2. Class Component . Functional Component: are just JavaScript functions that take in props and return jsx. functional component dont have state,but they can use useState hook to achieve similar functionality. functional components don't have lifecycle methods but they can use useEffect hook to achieve similar functionality. functional components are more resuable as they are just functions which can be easily reused across multiple components. functional components are usually faster and more efficient than class components.It can not use this keyword. it use return to render jsx. Class Component: Class Components are classes that extend the React Component Class and have a render method.class components have state, which is used to store data that can be change over time.class components havelifecycle methods which are methods that get called at diffirent points in the component's lifecycle . the class components are less reusable due to the complex inheritance hierchy and render methods. it uses this keyword to refer their own instance. use render method to render jsx. When it comes to state management In class component state is initialized in the constructor but In functional component state is initialized using the useState hook    ",
+        "code":"https://drive.google.com/file/d/1hI_tAKHjOmIbAf07Tt1V4XEiYDBc-IWi/view?usp=sharing"
+    },
+    {
+        "id":4,
+        "question":"What is the significance of render method in React?",
+        "answer":"It is a required method in a react class component that is responsible for returning a description of what component should render on screen. when render method is called , React generates a virtual DOM representation of the component's output based on the jsx returned by the render() method . whenever the state or props of a component change ,react will call the render() method again to regenerate the virtual DOM .React then compares new virtual DOM with previous virtual DOm and only updates the parts of the actual DOM",
+        "code":""
+    },
+    {
+        "id":5,
+        "question":"What is jsx? why it is used in react.js?",
+        "answer":"jsx stands for javascript XML. that allows you to write HTML like code in your jacascript.it looks similar to HTML but it is not HTML instead it is a syntax extension that allows you do define React elements which is lightweight description of what should be displayed on the screen. it is not required in react and you can use plain js to define UI if you prefer .but jsx has some benifits like 1.it improves readability 2.better performance 3.Intuative syntax(better understanding of syntax) 4.It is faster and more efficient",
+        "code":""
+    },
+    {
+        "id":6,
+        "question":"How does js enable you to reuse components across different parts of your application?",
+        "answer":"Component Composition: This is the process of building complex UI's. Props:(short for properties) are a way to pass data from a parent component to a child component we can use the same component in diffirent parts of your application with props you can customize your components dynamically By passing props down to child components",
+        "code":""
+    },
+    {
+        "id":7,
+        "question":"what is the difference between functional and class components?",
+        "answer":"Class Component : 1.Defined as Javascript class that extends the react component class 2. Class components has state 3.render method is required that returns the UI of the component 3.It can use lifecycle methods  Functional Component: 1.defined as a plain js function 2.It uses return to to render Ui of the component 3.do not have any lifecycle methods 3.It does not require any state or lifecycle method.",
+        "code":""
     }
 ]
   
