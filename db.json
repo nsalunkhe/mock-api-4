@@ -92,6 +92,50 @@
         "answer":"Class Component : 1.Defined as Javascript class that extends the react component class 2. Class components has state 3.render method is required that returns the UI of the component 3.It can use lifecycle methods  Functional Component: 1.defined as a plain js function 2.It uses return to to render Ui of the component 3.do not have any lifecycle methods 3.It does not require any state or lifecycle method.",
         "code":""
     }
+],
+"day2react":[
+    {
+        "id":1,
+        "question":"What is the difference between jsx and javascript syntax?",
+        "answer":"jsx-------> 1.looks like HTML 2.Allows you to use HTML like syntax to define components 3.Use specifically for use with React.js components.......| js----> 1.Looks like regular javascript 2.Requires the use of React.createElement() method to define components 3.harder to read than jsx 4.can be used to define components in a wider varity of situations ",
+        "code":"https://drive.google.com/file/d/1gEKjjr-_uBrd9QeWRpQLPHTZHZQQs_8J/view?usp=sharing"
+    },
+    {
+        "id":2,
+        "questions":"How do you use props to pass data between components in React.js and what are some best practices to follow when doing so?",
+        "answer":"Props: is a way to pass data from parent component to child component. some of the best practices are 1.Always pass data down the component tree, from parent to child .this ensures that the data flow is unidirectional and makes it easier to reason about your application state 2.Avoid modifying props directly. props should be considerd read-only and any changes to props should be made in the parent component and passed down again. 3. Use default props to provide fallback values ,you can define default values for props using the default props property on your component. 4.Be careful when passing complex objects or functions as props. It's generally better to keep your props simple and avoid passing complex data structures or functions if possible.",
+        "code":"https://drive.google.com/file/d/1_KdLrBKR2KzwIWutpeQ4cGluW1NhgtAi/view?usp=sharing"
+    },
+    {
+       "id":3,
+       "question":"What is the significance of the children props in react js and how can it be used to render dynamic content within a component?",
+       "answer":"You can pass other components as children to a component, allowing you to compose complex UIs from simpler components.",
+       "code":"https://drive.google.com/file/d/1YIQuMs-wnG16FZdYldqi1LfIFC12j41g/view?usp=sharing"
+    },
+    {
+        "id":4,
+        "question":"Can you explain concept of prop drilling with example? How to avoid it?",
+        "answer":"prop drilling is a concept in React.js where date is passed down from a parent component to a child component,and then passed down to another child component ,and so on. untill it reaches the component it needed. This can lead to a situation where components that don't actually need the data are receiving it as a prop , which can be inefficient and lead to complex and hard to maintain code. To avoid prop drilling one approach is to use the CONTEXT API in React : It allows you to pass data down to components without having to pass it explicitely as props at each level of the component tree.",
+        "code":"https://drive.google.com/file/d/1NMG8JmOdb60BBHkr96UwAe-OdNdaHmoE/view?usp=sharing"
+    },
+    {
+        "id":5,
+        "question":"How can you avoid prop-drilling using context api?",
+        "answer":" Context API allows you to pass data down to components without having to pass it explicitely as props at each level of the component tree .Please refer code to get answer",
+        "code":"https://drive.google.com/file/d/1RKcmagNHk4wYXA-zMiFnsZfk15CIKcDl/view?usp=sharing"
+    },
+    {
+        "id":6,
+        "question":"How do you use conditional rendering in React.js and what are Some common patterns for doing so?",
+        "answer":"Conditional Rendering: ability to render diffirent components or content based on certain conditions 1.if else 2.Ternary Operator 3.Logical Operator 4.Switch Statements . ----> follow the code to understand how these operators works",
+        "code":"https://drive.google.com/file/d/10SjN25bIq-XZHhrskfgK_w51vYAIrfHJ/view?usp=sharing"
+    },
+    {
+        "id":7,
+        "question":"What is the significance of the Key prop in React.js , and how can it be used in combination with conditional rendering to optimize performance?",
+        "answer":"In React Key prop is special attribute to help to identify which items have changed,been added,or been removed from a list of rendered items. when a list of elements is rendered ,React assigns a unique identifier to each element in the form of key .this allows react to track each element and determine whether it has been ,updated ,moved or deleted . without key react may be forced to re-render the entire list even if only one item has changed which can result in performance issue.",
+        "code":"https://drive.google.com/file/d/1_Zc-4SbmAn8UKHp1g2gn5K00GL3jai6A/view?usp=sharing"
+    }
 ]
   
 
