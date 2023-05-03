@@ -136,9 +136,64 @@
         "answer":"In React Key prop is special attribute to help to identify which items have changed,been added,or been removed from a list of rendered items. when a list of elements is rendered ,React assigns a unique identifier to each element in the form of key .this allows react to track each element and determine whether it has been ,updated ,moved or deleted . without key react may be forced to re-render the entire list even if only one item has changed which can result in performance issue.",
         "code":"https://drive.google.com/file/d/1_Zc-4SbmAn8UKHp1g2gn5K00GL3jai6A/view?usp=sharing"
     }
-]
-  
+],
+"day3react":[],
+"day4react":[],
+"day5react":[],
+"day6react":[],
+"day7react":[],
+"day1js":[
+    {
+        "id":1,
+        "question":"What is Js?",
+        "answer":"1.Javascript is High-Level Dynamic Interpreted Programming Language commonly used in web developement.2.used to add interactivity and functionality to web pages ,web applications ,making them more engaging and user friendly .3.created by BRENDAN EICH in 1995 when he was working at NetScape Communications 3.This language is supported by all major web browsers 4.also used on the server side e.g. Node.Js 5.Has large active community with numerous library and frameworks available to facilitate developement.6. Js runs natively in all major web browsers which means that it can be executed on the client side without required any additional software or plugins that makes it a versatile and accessible choice for building web applications. ",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"What are web browsers?",
+        "answer":"1.Software application that allows users to access and view websites on the www. 2.It retreives information from web servers and display it on the users device in the user friendly format such as text,images,videos.3.web browsers are designed to interpret display HTML,CSS,Js code. 4.It acts as an interface between the user and web server---USER-->BROWSER<----SERVER.5. allowing the users to navigate through web pages ,submit forms and interpret with dynamic content. e.g. Chrome,Firefox,Safari,Microsoft-edge,opera.",
+        "code":""    
+    },
+    {
+        "id":3,
+        "question":"What are web-servers?",
+        "answer":"1.Web server is a computer program that serves content to clients over the www it recieves requests from clients (browsers) and responds with web pages,documents. 2.It is essential component of the internet infrastructure allowing users to access websites and other online resources.3. e.g. Apache,Nginx,microsoft,NodeJs,",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"What is Client-Server-Model?",
+        "answer":"1.When we type / search url of any website on chrome (browser) --->browser sends requests to web server hosting the website ----> The web server process that request retrieves the requested resource and sends back to the browser.",
+        "code":""
+    },
+    {
+        "id":"5",
+        "question":"What are various protocols to communicate with clients?",
+        "answer":"1.HTTP:This protocol is used to transfer data over the internet.It is not a secure protocol as it transmits login credentials and data in plain text making it vulnarable to interception and eavesdropping...| ----| 2.HTTPS:S for secure and it provides secure data transfer over the internet by encrypting it---| 3.FTP(FIle Transfer Protocol): Used for transferring files between computers on a network.It is an application layer protocol that uses client server model. It operates on PORT 21 . It allows user to upload ,download,manage files on a remote server.It has two modes of operations 1.Active mode 2.Passive mode ...| Active Mode: FTP server initiates the connection to the client computer for data transfer. Passive Mode : Client initiates the connection to the server. It is not a secure protocol as it transmits login credentials and data in plain text making it vulnarable to interception and eavesdropping...| FTPS: File Transfer Protocol Secure : Same like HTTPS , It supports for SSL/TLS encryption, providing secure data transfer and remote file management.FTP/SFTP encrypts all data and commands sent between the client and server making it more secure than FTP and FTPS...| SMT Protocol: Simple Mail Transfer Protocol : It is used in sending and receiving email messages between servers on a network. It operates on PORT 25 . It works by sending email messages from a client to a mail server or from one mail server to another .the mail messages are composed of a header which contains the actual message  "
 
+    }
+],
+"day2js":[],
+"day3js":[],
+"day4js":[],
+"day5js":[],
+"day6js":[],
+"day7js":[],
+"day1html":[],
+"day2html":[],
+"day3html":[],
+"day4html":[],
+"day5html":[],
+"day6html":[],
+"day7html":[],
+"day1mongo":[],
+"day2mongo":[],
+"day3mongo":[],
+"day4mongo":[],
+"day5mongo":[],
+"day6mongo":[],
+"day7mongo":[]
 }
 
   
