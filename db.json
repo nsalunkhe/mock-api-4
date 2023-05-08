@@ -168,13 +168,108 @@
         "code":""
     },
     {
-        "id":"5",
+        "id":5,
         "question":"What are various protocols to communicate with clients?",
         "answer":"1.HTTP:This protocol is used to transfer data over the internet.It is not a secure protocol as it transmits login credentials and data in plain text making it vulnarable to interception and eavesdropping...| ----| 2.HTTPS:S for secure and it provides secure data transfer over the internet by encrypting it---| 3.FTP(FIle Transfer Protocol): Used for transferring files between computers on a network.It is an application layer protocol that uses client server model. It operates on PORT 21 . It allows user to upload ,download,manage files on a remote server.It has two modes of operations 1.Active mode 2.Passive mode ...| Active Mode: FTP server initiates the connection to the client computer for data transfer. Passive Mode : Client initiates the connection to the server. It is not a secure protocol as it transmits login credentials and data in plain text making it vulnarable to interception and eavesdropping...| FTPS: File Transfer Protocol Secure : Same like HTTPS , It supports for SSL/TLS encryption, providing secure data transfer and remote file management.FTP/SFTP encrypts all data and commands sent between the client and server making it more secure than FTP and FTPS...| SMT Protocol: Simple Mail Transfer Protocol : It is used in sending and receiving email messages between servers on a network. It operates on PORT 25 . It works by sending email messages from a client to a mail server or from one mail server to another .the mail messages are composed of a header which contains the actual message  "
 
+    },
+    {
+        "id":6,
+        "question":"Why do we use https over http?",
+        "answer":"HTTP is not a secure and transmits data in plain text. HTTPS provides end-to-end encryption , which means that any data transmitted between the client and server is encrypted and can not be read by unauthorized users . this protects sensitive information such as login credentials ,creadit card information and personal data from being intercepted and stolen-----1.Authentication: HTTPS uses digital certificates to verify the identity of the server and ensure that the client is communicating with the correct website .this prevents man in the middle attacks where an attacker intercepts the communication between the client and the server and impersonates one of them .2.SEO:Google has confirmed that https is a ranking factor in its search algorithm.which means that websites that use https may rank higher in search results than those use http.-----3.Compliance: many industries and regulations require websites to use https to protect user data such as payment card industry data security standerd (PcIDSS) for e-commerce websites and general data protection regulation(GDPR) for websites that collect personal data. overall HTTPS provides a more secure and transworthy way of transmitting data over the internet , and it is incresingly becoming the standerd for websites that value the privacy and security of the users.",
+        "code":""
+    },
+    {
+        "id":7,
+        "question":"What is SSL and TLS encryption?",
+        "answer":"SSL: SECURE SOCKET LAYER (developed by Netscape communications corporation in the mid-1990's)_____TLS: Transport Layer Security (It is a successer of SSL and standerdized by IETF Internet Engineering Taskforce , It is updated version of SSL)  these two are cryptographic protocols that provide secure communication over the internet. Both use encryption to protect data transmission and prevent unauthorized access.    Hand Shake key access: It works by establishing a secure connection between two parties such as web server and a client web browser involves following steps 1.The client initiates connection to the server and requests secure server response with its digital certificates which contains the servers public key and other identifying information.3. The client uses the servers public key to encrypt a random session key, which is sent to the server . the server decrypts the session key and uses it to encrypt and decrypt data transmitted between client and server.4. Data Transfer:Once the connection is established ,data is transmitted between the client and the server in encrypted form, ensuring that it cannot be intercepted and read by unauthorized users.SSL/TLS encryption is used in a wide range of applications ,including web browsing ,email instant messing and file transfers .It is essential for protecting sensitive information such as login credentials,credit card information ,personal data transmitted over the internet. ",
+        "code":""
+    },
+    {
+        "id":8,
+        "question":"Define ways of hoisting website on the server",
+        "answer":"1.Shared Hoisting : Multiple websites are hoisted on the same web server (It uses software to keep each website file seprate).2.Virtual private server:Single physical server is divided into multipe virtual servers each of them can use one or more websites. 3.Dedicated server: Clients rents an entire physical server for their own use (full Control).4. Cloud hosting: multiple servers are used to serve website(to prevent server down).   To specify web server to host website you need to register a domain name and configure its DNS (Domain Name System) records to point to the IP address of the web server where your website is hosted.Here are steps to specify a web server to host a website 1.Choose a domain name register :A domain name register is a company that manages the registration of domain names . you need to choose a register and register your domain name. 2. Choose a hosting provider : A web hosting provider is a company that provides the server space and resources to host website you need to choose hosting provider and signup for web hosting plan .3. Setup your website on the web server: Once you have signed up for a hosting plan you need to setup your website on the web server .this involves uploading your website files and configuring the web server software to serve your website.4.Configure DNS records: to point your domain name to the IP address of the web server where your website is hosted ,you need to configure your domains DNS records .this involves creating a record that maps your domain name to the IP address of the web server.5. Wait for DNS propogation : After you have configured your DNS records ,It can take some time for changes to propogate accross the internet from a minute to a several hours . once the DNS changes have propogated ,your website will be accessible at your domain name and users will be able to access it by typing your domain name in the web browser.",
+        "code":""
+    },
+    {
+        "id":9,
+        "question":"Specifications of JS why do we prefer JS over other languages for web developement?",
+        "answer":"1.Client Side Scripting: In Client Side Scripting the web server sends the HTML,CSS,JS files to the users browser and the browser then execute JS code to make the web page more interactive and dynamic.eg.In validation form where user is alerted if they enter invalid data into a form field, or create dynamic menu's.It is benificial because It reduces the workload on the web server . since most of the processing is done on the user's computer this results in faster page load times and more responsive UI.It can be disabled or blocked by the users web browser and that can be vulnarable to security issues if not implimented properly.2.Compatibility: Js is supported by all modern web browsers ,making it a universal language for web -developement. this allows developers to create web applications that works accross diffirent platforms and devices.3.Frameworks and libraries: frameworks:AngularJs,ReactJs,JQuery: provides pre-written code and tools to simplify web developement tasks and speed up the developement process. 4. Integration with HTML,CSS: It integrate seamlessly with HTML,CSS (the other two core technologies used in web developement). allows developers to create dynamic web pages that combine static content with interactive elements.5.Backend Developement: It can be used for backend developement with platforms such as Node.Js allowing developers to cretae server-side applications using JS.",
+        "code":""
+    },
+    {
+        "id":10,
+        "question":"What are Data-types in JS ?",
+        "answer":"1.Primitive : String,Number,boolean,null,undefined,symbol 2.Non Primitive: Object,function ----------1.Primitive-------> a.Immutable:primitive value returns new value When you create a primitive value, a new piece of memory is allocated to store that value. This memory location is fixed and cannot be changed. If you assign a new value to the same variable, a new memory location is allocated for the new value.For example, when you declare and initialize a variable x with the value 10, a new memory location is allocated to store the value 10. If you then re-assign the value of x to 5, a new memory location is allocated to store the value 5, and the original memory location storing the value 10 remains unchanged.This means that primitive data types are immutable because you cannot change the value stored in the original memory location once it has been created. If you want to change the value of a variable, you must create a new memory location and assign the new value to that location. b.It is stored by value: when a variable is assigned a value of primitive datatype, a copy of the value is created and stored in memory e.g. let num1=10; let num2=num1 (here num2 is assigned a copy of num1) num1=20 console.log(num2)====>10 changes to one variable do not affect others. c.It is faster to access: due to stored by a value it is faster to access. 2.Non-Primitive Data-Type: a.It is mutable let person ={name:'ABC'} person.name='DEF' console.log(person.name)===>DEF b. It is stored by reference: after assigining value to variable the variable holds a reference to the memory location where the value is stored .Any changes made to the variable affect the original value. let obj1={name:'ABC',age:30} let obj2=obj1  obj1.age=40  console.log(obj1)==>{name:'ABC',age:40} console.log(obj2)==>{name:'ABC',age:40} Here you can see that if we update any value will be reflecting everywhere.c.Due to stored by a reference this is slower to access",
+        "code":""
+    },
+    {
+     "id":11,
+     "question" :"What is the difference between == and  === ?",
+     "answer":"Both of them are comparison operators ==: check only value not data-type e.g console.log(5=='5')-true ====> Type corcion:Js will attempt to convert one of the values to match the other based on set of implicit conversion rules. ===: Strict equality operator checks both value and datatype. console.log(5==='5')-false ",
+     "code" :""  
+    },
+    {
+     "id":12,
+     "question":"What is variable in JS ?",
+     "answer":"It is named container for storing data values. the data stored in a variable can be of any data-type number,string,boolean,object. we have 3 keywords to declare variables var,let,const. ",
+     "code":""
+    },
+    {
+        "id":13,
+        "question":"What is the difference between var,let,const?",
+        "answer":"1.var:a.used to declare variable with functional scope b.available within entire function including nested functions. c. variable declared with var are hoisted. var declared with var is moved to the top of the function or global scope regardless where the actual decleration appears in the code. d. console.log(myvar) //undefined  var myvar=5 |  var a=5 var a=5 console.log(a) //5  | var a=10 a=9 console.log(a) //9._____2.let: a.It is used to declare variable with block scope. b.Only available within block they are declared in. c. hoisting is not available. d. console.log(mylet) //Uncaught referenceerror :mylet is not defined let mylet=5. e. Random questions : let a=7 let a=7 console.log(a) // SyntaxError: Identifier a has already been declared |  let a=9 a=10 console.log(a) //10.___const:a.const is used to declare variables that can not be reassigned. b. used to declare variable with block scope. c. hoisting is not available d.Some random questions: 1.console.log(a) //ReferenceError: cannot access a before initialization. const a=3 . | 2.const a=3 const a=1 console.log(a) //TypeError:Assignment to constant variable| in general It is recomended to use let or const instead of var as it can help to prevent unexpected behavior due to hoisting and scope issue. ",
+        "code":""
+    },
+    {
+        "id":14,
+        "question":"Explain diffirent types of operators in Js?",
+        "answer":"1.Arithmetic: +,-,/,*,%(remainder) 2.Comparison Operator: compare two values and returns boolean value e.g. let a=10 let b=5 a>b-true a>=b-true 3.Assignment Operator: let a=10 ,a+=5 It is used to assign values (+,-,*,/) 4. Unary Operator:let a=10  Unary plus: console.log(+a)  Unary minus: console.log(-a) typeof: let a=1 typeof(a) = number 5. Ternary operator: It is a short-hand way of writing if else statement let a=10 let b=5  if(a>b){ console.log('a is greater than b')} else{console.log('a is less than b')} ======> a>b? a is greater than b : a is less than b} ",
+        "code":""
+    },
+    {
+        "id":15,
+        "question":"What are control structures in JS ?",
+        "answer":"Control structures in javascript are used to control the flow of execution based on certain conditions e.g. if else , for loop , while loop , switch statements , do while loop.",
+        "code":"https://drive.google.com/file/d/1gw20JmHjnw4tDLIgKUgEKq9snxHW2u8j/view?usp=sharing"
+    },
+    {
+        "id":16,
+        "question":"What is function in Js ?",
+        "answer":"A block of code that can be reused through out  your code .It allows you to encapsulate a piece of functionality . just give it a name and then call it from anywhere in your code",
+        "code":"https://drive.google.com/file/d/1JnGdbrRn1tnOpEnW495tEEbzARlznFLM/view?usp=sharing"
+    },
+    {
+        "id":17,
+        "question":"What is scope in JS ? tell the difference between local and global scope in function ?",
+        "answer":"Scope : refers to the visibility or accessibiity of variable within code. to determine where in your that variable can be accessed and manipulated 1.Global scope 2.Local scope .  Global scope : 1.refers to the variable that are declared outside of any function or block these variable can be accessed from anywhere in your code including inside functions or blocks . 2.Local scope: refers the variables that are declared inside of a function or a block,     these variables can only accessed from within that function.",
+        "code":"https://drive.google.com/file/d/1QDr2TyuUtLOgX2yqr-dccKsUzs_aLR8P/view?usp=sharing"
+    },
+    {
+        "id":18,
+        "question":"What is Hoisting in JavaScript ?",
+        "answer":"It is a behavior where variable and function declerations are moved at the top of their respective scopes during the compilation phase even if they appear later in the code. USE: you can use a variable or function before it has been declared in your code and JS will still recognize it. however it is generally considerd good practice to declare variable and functions at the top of their respective scope to avoid confusion and improve code readability. It's important to note that only variable and function declarations are hoisted, not their assignments or initializations. ",
+        "code":""
+    },
+    {
+        "id":19,
+        "question":"Explain the use of 'this' keyword in JS.",
+        "answer":"It is used to refer current object or context in which a function or method is called . the value is determined at runtime and depends on how the function is called. In JavaScript, there are two ways of binding the this keyword to an object: implicit binding and explicit binding. Here are the main differences between them:Implicit Binding: This happens when this is automatically bound to the object to the left of the dot (.) when a function is called. In other words, the this keyword is implicitly bound to the object that the function is called on. This type of binding is determined by the calling context.Explicit Binding: This happens when this is explicitly bound to an object using call(), apply(), or bind() methods. These methods allow you to specify the value of this when calling a function.",
+        "code":"https://drive.google.com/file/d/1TEuuvLb1zdr3TL9Dseq3pbKcwu7b4STD/view?usp=sharing"
+    },
+    {  
+        "id":20,
+         "question":"Explain 'this' keyword in Arrow functions.",
+         "answer":"Arrow function has lexical binding: Lexical binding is a mechanism in JavaScript that determines how the value of this is determined in a function. It is based on the lexical scope, which is the scope in which a variable is declared.",
+         "code":"https://drive.google.com/file/d/1KNQXTjHncOPqAlWlSUGPN8VJ2PWWx_76/view?usp=sharing"
     }
 ],
-"day2js":[],
+"day2js":[
+    {
+        
+
+    }
+],
 "day3js":[],
 "day4js":[],
 "day5js":[],
