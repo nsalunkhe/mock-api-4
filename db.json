@@ -137,10 +137,99 @@
         "code":"https://drive.google.com/file/d/1_Zc-4SbmAn8UKHp1g2gn5K00GL3jai6A/view?usp=sharing"
     }
 ],
-"day3react":[],
+"day3react":[
+    {
+        "id":1,
+        "question":"What is state management in React.js, and why is it important?",
+        "answer":"State management in react.js is refer to the process of managing the data that is used by components. It involves defining and updating the state of the component to reflect changes in the data. proper state management is essential for building scalable and maintainable applications in react.js",
+        "code":"https://drive.google.com/file/d/1jx4GVn9RWC7GSlhe88nSVmOEjc0gNi2Y/view?usp=sharing"
+    },
+    {
+        "id":2,
+        "question":"What is the difference between state and props?",
+        "answer":"Props:1. props are used to customize a component and pass data from one component to another.2.props are read only and should not be modified directly within a component.3. props are passed down from a parent component to child component.4.perops are accessable via this.props within a class component or as an argument to a functional component. 5. props are used for one way data flow from parent to child components.______State:1.state is used to manage data within a component and trigger a re-render of the component when updated.2.state is mutable and can be updated within a component using setState().3.state is accessible via this.state within a class component or as a hook useState in a functional component.4.state is managed within a component and can be passed down to child components as props.5.state is used for managing internal state within a component and triggering a re-render when necessary.",
+        "code":"https://drive.google.com/file/d/1QoIZhMxzpzAHjolVPve_I9PWLmRsAEbc/view?usp=sharing"
+    },
+    {
+        "id":3,
+        "question":"What is the difference between functional and class components?",
+        "answer":"refer code to understand answer.",
+        "code":"https://drive.google.com/file/d/1aVGPlnl3-Fz0kNWNIRE-TAiZ6aCW7MWy/view?usp=sharing"
+    },
+    {
+        "id":4,
+        "question":"What are the advantages and disadvantages of using React.js in web development?",
+        "answer":"Advantages of using React.js in web development:1.Reusable components: React.js provides a modular approach to building web applications with reusable components that can be easily shared across different parts of an application. This saves time and effort in coding, and promotes consistency in the user interface.2.High performance: React.js uses a virtual DOM to efficiently render changes to the user interface, resulting in faster and smoother performance compared to traditional methods.3.Large community and ecosystem: React.js has a large and active community, with many third-party libraries and tools available for use in web development.4.SEO-friendly: React.js can be easily optimized for search engines, as it allows for server-side rendering.___Disadvantages of using React.js in web development:1.Steep learning curve: React.js has a relatively steep learning curve, especially for developers who are new to the library or to web development in general.2.Overhead: React.js has a lot of overhead, and can require additional tools and libraries to be installed and configured, which can be time-consuming.",
+        "code":""
+    },
+    {
+        "id":5,
+        "question":"What is the setState() method in React, and how does it differ from directly assigning state?",
+        "answer":"In React, setState() is a method provided by the Component class that is used to update the state of a component. It is the recommended way to update state because it is asynchronous, which means that React can batch multiple setState() calls together for better performance. setState() takes an object or a function that returns an object as its argument, and merges the new state into the current state of the component. Directly assigning state by modifying the state object directly is not recommended because it can lead to unexpected results. In fact, React will issue a warning if you try to modify state directly. For example, if you have a state object with two properties and you modify one of them directly, the other property will be lost.",
+        "code":"https://drive.google.com/file/d/191qEAxra05dgm_Bm1V_4M3pkK0fgoyGM/view?usp=sharing"
+    },
+    {
+
+    }
+],
 "day4react":[],
 "day5react":[],
-"day6react":[],
+"day6react":[
+    {
+        "id":1,
+        "question":"What is Redux, and what problem does it solve in React.js applications?",
+        "answer":"1.Redux is a state management library for JavaScript applications, particularly those built with React.2.It provides a centralized way of managing application state, which can help to simplify the flow of data through an application.3.Redux works by maintaining a single, centralized store for an application's state, which can be accessed and updated by any part of the application.4.Redux can help to solve problems such as prop drilling, where data must be passed down through multiple levels of components, and complex state management that can become difficult to maintain.5.Redux accomplishes this by defining actions and reducers, which handle updates to the store's state in a predictable and scalable way.6.Actions are objects that describe changes to the state, and are triggered by events in the application.7.Reducers are pure functions that take an action and the current state, and return a new state based on the action.",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"How does the Redux Store work, and what are its main features?",
+        "answer":"The Redux Store is a single, centralized place to store the state of an entire React.js application. It is an object that holds the entire state tree of the application and provides a way to dispatch actions to update the state.Here are the main features of the Redux Store:Centralized state management: The store holds the entire state of the application, making it easy to access and update from any component in the app.Immutable state: The store's state is immutable, which means that it cannot be changed directly. Instead, changes to the state are made by dispatching actions, which are then handled by reducers.Predictable state changes: The state changes in the store are predictable because they are made by dispatching actions, which are handled by pure functions called reducers. Reducers take in the current state and an action, and return a new state based on that action.",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"What are actions in Redux, and how do they relate to state changes?",
+        "answer":"In Redux, actions are plain JavaScript objects that represent an intention to change the state of the application. They describe what has happened in the application, such as a user clicking a button or data being received from an API. Actions contain a type field that specifies the type of action being performed and an optional payload field that provides additional data needed to update the state.Actions are used to trigger state changes in the Redux Store through reducers. When an action is dispatched, it is sent to the Store, which calls the appropriate reducer function to update the state based on the action type and payload. The reducer creates a new copy of the state with the necessary changes applied and returns it, replacing the previous state in the Store.Actions are an essential part of the unidirectional data flow in Redux, which helps to ensure that the state is predictable and easy to reason about. They make it easy to keep track of all the changes that have occurred in the application and provide a clear and consistent way to modify the state.",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"What are reducers in Redux, and what role do they play in managing state?",
+        "answer":"Reducers are functions in Redux that specify how the application's state should be updated in response to actions. They take in the current state and an action object as arguments, and return the updated state.Reducers are responsible for determining how the state changes in response to actions. They must be written in a way that is pure, meaning they do not modify the original state object, and they always return a new state object, even if the state has not changed.Reducers are the only way to modify the state in a Redux application, and they are typically combined into a single root reducer using the combineReducers() function. The root reducer is then passed to the Redux store, where it is used to manage the application state.Take the current state and an action as input.Determine how the state should change in response to the action.Return the new state as output.Must be pure functions that do not modify the original state object.Are combined into a single root reducer using combineReducers().Are responsible for managing the application state in Redux.",
+        "code":""
+    },
+    {
+        "id":5,
+        "question":"How do you create a Redux store in a React.js application, and what are the required elements?",
+        "answer":"1.Import the createStore function from the redux package.Create a reducer function to handle the state changes in your application.Use the createStore function to create a new store, passing in your reducer function as an argument.Optionally, you can set the initial state of your store by passing it as a second argument to the createStore function.",
+        "code":"https://drive.google.com/file/d/1fAzR1K8_cb9s9MFya0M9dfeBaKewtm_5/view?usp=sharing"
+    },
+    {
+        "id":6,
+        "question":"What is the difference between dispatching an action and invoking a reducer in Redux?",
+        "answer":"Dispaching an action means sending a message to redux store ,indicating that state change should be occur. An action is an object that contains a 'type' field and any additional data that may be necessary to update the state.invoking a reducer means calling a function that takes the current state and an action as argument ,and returns the new state of the application.reducers are pure functions that should not modify the existing state, but instead should return a new state based on the action that was dispatched.",
+        "code":"https://drive.google.com/file/d/1sRsAJNWcgCtmYCqOMn-plDUvgdof_dFk/view?usp=sharing"
+    },
+    {
+        "id":7,
+        "question":"How can you connect a component to a Redux store, and what are the benefits of doing so?",
+        "answer":"In order to connect a component to a Redux store in a React.js application, you need to use the connect function provided by the react-redux library. This function takes two arguments:1.mapStateToProps:a function that maps the state from the Redux store to props that are passed to the connected component.2.mapDispatchToProps:a function that maps action creators to props that are passed to the connected component. The benefits of connecting a component to a Redux store include:Simplified state management: Connecting a component to a Redux store allows the component to access and update the state without having to pass state down through multiple levels of the component hierarchy.2.Centralized state management:By using a global store, Redux provides a centralized location for managing application state, which can help simplify state management and prevent common bugs associated with unidirectional data flow.3.Improved performance:Connecting a component to a Redux store allows the component to subscribe to updates to the state that are relevant to it, which can help improve performance by reducing unnecessary re-renders.",
+        "code":"https://drive.google.com/file/d/1p9WByHbLOm0PDWuuQGQsAaxnLipZriOX/view?usp=sharing"
+    },
+    {
+        "id":8,
+        "question":"What is the purpose of the connect() function in the React-Redux library?",
+        "answer":"The connect() function in the React-Redux library is used to connect a React component to the Redux store.It is a higher-order function that returns a new component, which wraps the original component and provides it with the data it needs from the store.The main purpose of the connect() function is to provide a convenient way to access and manipulate the store's data from within a React component. By connecting a component to the store you can:Access data from the store's stateDispatch actions to update the store's state Re-render the component automatically when the store's state changes The connect() function takes two arguments: mapStateToProps and mapDispatchToProps.__1.mapStateToProps: A function that maps the store's state to the component's props.__2.mapDispatchToProps: A function that maps action creators to the component's props.By using these functions, the connect() function provides the component with the data it needs from the store, and the ability to dispatch actions to update the store's state.",
+        "code":""
+    },
+    {
+        "id":9,
+        "question":"What are thunks in Redux, and how can they be used to handle asynchronous actions?",
+        "answer":"Thunks are functions that allow you to delay the execution of some logic until a later time. In the context of Redux, thunks are used to handle asynchronous actions, such as fetching data from a server.Normally, when you dispatch an action in Redux, the reducer immediately updates the state based on that action. However, when you dispatch a thunk, it first executes some additional logic (such as making an API call) before dispatching a regular action. This allows you to handle asynchronous actions in a more organized way.To use thunks in Redux, you typically need to install the 'redux-thunk' middleware and create a thunk function that returns another function. The inner function receives the 'dispatch' method as an argument, which it can use to dispatch regular actions at a later time.",
+        "code":""
+    }
+],
 "day7react":[],
 "day1js":[
     {
