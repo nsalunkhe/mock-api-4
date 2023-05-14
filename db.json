@@ -382,7 +382,7 @@
     {
        "id":1,
        "question":"Searching in an array-Linear search(given an array of N elements , your task is to write a function to search a given element X in array",
-       "answer":"https://drive.google.com/drive/folders/1Pak5fAStV4UgvEh0RucUK6FHfkQiYw23?usp=sharing",
+       "answer":"https://drive.google.com/file/d/1a47LM3zeMXO17MB33wP5JUybvj9Ndk0M/view?usp=sharing",
        "time_complexity":"O(n) function iterates only once through an array",
        "space_complexity":"O(1) not any extra element/array is used",
        "advantages":"1.Simple to implement ,easy to understand. 2.it can be used on arrays of any datatype. 3.Does not require any additional memory",
