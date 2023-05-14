@@ -377,7 +377,111 @@
 "day4mongo":[],
 "day5mongo":[],
 "day6mongo":[],
-"day7mongo":[]
+"day7mongo":[],
+"array":[
+    {
+       "id":1,
+       "question":"Searching in an array-Linear search(given an array of N elements , your task is to write a function to search a given element X in array",
+       "answer":"https://drive.google.com/drive/folders/1Pak5fAStV4UgvEh0RucUK6FHfkQiYw23?usp=sharing",
+       "time_complexity":"O(n) function iterates only once through an array",
+       "space_complexity":"O(1) not any extra element/array is used",
+       "advantages":"1.Simple to implement ,easy to understand. 2.it can be used on arrays of any datatype. 3.Does not require any additional memory",
+       "drawback":"It has time complexity O(n) ,which in turns makes it slow for large datasets. 2.Not suitable for large array",
+       "usecase":"1.When we are dealing with a small datasets. 2.when you need to find an exact value. 3.when you are searching a dataset in contiguous memory"
+    },
+    {
+        "id":2,
+        "question":"Searching the element in an array using Binary Search technique.",
+        "answer":"https://drive.google.com/file/d/1WB85sOQDzIvacvwDhJqkf4Oj-lhtrUGj/view?usp=sharing",
+        "time_complexity":"O(log n)number of iterations required to find the target element is proportional to the logarithm of the size of the input array",
+        "space_complexity":"O(1), which means it requires a constant amount of memory regardless of the input size.",
+        "advantages":"The time complexity of the search function is O(log n), which is very efficient for large arrays.It works well with sorted arrays, as it first sorts the array and then searches for the element.It is a simple and easy-to-understand implementation.",
+        "drawback":"It requires the array to be sorted, which may not always be feasible or desirable.It uses recursion, which can be less efficient in terms of memory usage and performance compared to an iterative implementation.",
+        "usecase":", if you have a large dataset of customer information sorted by customer ID, and you need to quickly find the information for a specific customer, you could use binary search to efficiently locate the relevant record."
+    },
+    {
+        "id":3,
+        "question":"Reverse an array by replacing elements from both sides.",
+        "answer":"https://drive.google.com/file/d/1kvOfa7D-v0xi9UqzrV12QXM9X8Cjl0WD/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(1)The only extra space used is for the temporary variable 'temp', which requires constant space. The algorithm operates in-place, modifying the input array, and does not create any additional data structures.",
+        "advantages":"Time complexity: The time complexity of this method is O(n/2) or O(n) since it iterates through half of the array elements. This makes it more efficient than other methods that have a time complexity of O(n^2).Space complexity: The space complexity of this method is O(1) since it does not require any extra space to perform the reversal. This makes it more memory-efficient than other methods that require additional memory to store temporary variables.",
+        "drawback":"Modification of original array: This method modifies the original array, which may not be desirable in some cases. If you need to keep the original array intact, you would have to create a copy of it before applying this method.Not suitable for linked lists: This method works only for arrays, and cannot be used for reversing linked lists or other non-array data structures.",
+        "usecase":"The method of using a loop to reverse an array in-place is a good choice when you want to minimize the space complexity of your code. Since it operates on the existing array, it avoids the need to create a new array to hold the reversed elements. This can be especially useful when working with very large arrays or in situations where memory is limited."
+    },
+    {
+        "id":4,
+        "question":"Reverse an array recursively.",
+        "answer":"https://drive.google.com/file/d/1-ggDCS-nUHItvks8fGAxlwXTpzbZ_5kd/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(1)",
+        "advantages":"One advantage of using this recursive method to reverse an array is that it reduces the space complexity as it does not use any additional space.",
+        "drawback":"it may not be as efficient for very large arrays due to the added overhead of the function calls. Additionally, it may not be as easy to read and understand compared to a simple iterative approach.",
+        "usecase":"This method of array reversal can be useful in situations where the input array is large and space complexity is a concern, as it has a space complexity of O(1) (constant space). It can also be useful when a recursive approach is preferred over an iterative approach."
+    },
+    {
+        "id":5,
+        "question":"Program for array left rotation by d positions",
+        "answer":"https://drive.google.com/file/d/1TfVUyDET-atmswPLrlHHHzJ0S1PbGpfe/view?usp=sharing",
+        "time_complexity":"O(n): function is iterating through array 2 times",
+        "space_complexity":"O(n):function is creating new array of size n",
+        "advantages":"It has a time complexity of O(n), which is optimal for rotating an array by a fixed number of positions.It uses an additional array to store the rotated elements, which can be useful if the original array needs to be preserved.It is easy to understand and implement, making it a good choice for simple applications.",
+        "drawback":"Additional space requirement: This method requires creating a temporary array to hold the rotated values. If the array is large, this can result in a significant increase in memory usage.Extra loop iterations: In this method, two loops are used to iterate through the array - one for copying the right part of the array to the temporary array and another for copying the left part of the array to the temporary array. This can lead to extra loop iterations compared to some other methods, which can impact performance.",
+        "usecase":"One real-life use case for this method of rotating an array is in cryptography. In cryptography, it is common to use permutations of arrays as keys to encrypt and decrypt messages. By rotating an array, a new permutation can be generated, which can then be used as a new key. This helps increase the security of the encryption by making it harder for attackers to guess the key and decipher the message."
+    },
+    {
+        "id":6,
+        "question":"Program for array left rotation by d positions Approach-2",
+        "answer":"https://drive.google.com/file/d/1b388SPJNELbvzqK5LVxHOXu_814-SapI/view?usp=sharing",
+        "time_complexity":"O(n*d) rotating d times",
+        "space_complexity":"O(1) modifying original array not creating new one",
+        "advantages":"This method does not require any additional memory space. It is a simple and straightforward algorithm to rotate an array. It has a time complexity of O(n*d), where n is the size of the array and d is the number of rotations, which is relatively efficient.",
+        "drawback":"The time complexity of this algorithm is not optimal, as it requires multiple shifts for each rotation.",
+        "usecase":"rotating shifts for employees, where the order of shifts needs to be rearranged periodically to ensure that everyone has equal opportunity to work different shifts."
+    },
+    {
+        "id":7,
+        "question":"Program for array right rotation by K times",
+        "answer":"https://drive.google.com/file/d/1AR7vpw3AOHreozQ5EmWt1hLs_8Pz4uQV/view?usp=sharing",
+        "time_complexity":"O(n*d)",
+        "space_complexity":"O(1)",
+        "advantages":"Does not require extra space, the array is modified in place.",
+        "drawback":"Time complexity is O(n*d), where n is the size of the array and d is the number of elements to rotate. This may not be efficient for large arrays or a large number of rotations.It may not be suitable for some use cases where the original order of the elements needs to be preserved.",
+        "usecase":"in a playlist application where a user wants to shuffle the songs in their playlist. The application can use the rotate array method to randomly select a starting point in the playlist, and then rotate the array to move that starting point to the beginning of the playlist. This effectively shuffles the songs in the playlist without losing any of them."
+    },
+    {
+        "id":8,
+        "question":"Searching element in an array.",
+        "answer":"https://drive.google.com/file/d/1hTlazqMPFUe91R6tEa5xOtCCyZMZtDun/view?usp=sharing",
+        "time_complexity":"O(n) because function is iterating through array once",
+        "space_complexity":"O(1) time required to perform the check for each element",
+        "advantages":"Simple and easy to understand.Works well for small arrays or when the position of the element to be searched is known.",
+        "drawback":"Inefficient for large arrays as it iterates through all elements.Not suitable for searching multiple occurrences of the same element.",
+        "usecase":" checking if a certain username already exists in a list of usernames"
+    }
+],
+"stack":[
+    {
+     "id":1,
+     "question":"Create constructor function for stack.",
+     "answer":"https://drive.google.com/drive/folders/1y8HuitsUuBuGcyObArOxTeIhrS3YtipD?usp=sharing",
+     "time_complexity":"",
+     "space_complexity":"",
+     "advantages":"Encapsulation: By using a constructor function, you can encapsulate the implementation of the stack within the function, making it easier to manage and maintain.Reusability: Once you have defined a constructor function for a stack, you can create as many instances of the stack as you need, without having to repeat the same code.Customizability: Since the constructor function is a template for creating objects, you can easily customize the behavior of the stack by adding or removing methods or properties.Readability: Using a constructor function with well-named methods can make the code more readable and easier to understand.Error handling: You can include error handling code within the constructor function to ensure that the stack is used correctly and to prevent errors from occurring.",
+     "drawback":"Memory management: In some cases, using a constructor function for a stack can lead to memory leaks or inefficient memory usage. For example, if the stack is used to store large or complex objects, the memory used by those objects may not be released when they are popped off the stack, leading to wasted memory.",
+     "usecase":"Stacks are useful when we need to keep track of the order of elements and need to access the most recently added element first. Use : Browser history: When we navigate through a website, the pages we visit are pushed onto a stack. When we hit the back button, we pop off the most recent page and navigate back to the previous page." 
+    },
+    {
+        "id":2,
+        "question":"Nearest smaller element to right",
+        "answer":"https://drive.google.com/file/d/1B7RrLOmFz1OL2RQk_tok4bEW8q67Gb3w/view?usp=sharing",
+        "time_complexity":"s O(n) because it iterates through the input array once, performing constant time operations for each element.",
+        "space_complexity":"The space complexity of this code is O(n) because it creates a new array of the same size as the input array to store the results, and a stack to store the intermediate values. However, the size of the stack at any given time will not exceed the length of the input array, so the space complexity is still O(n).",
+        "advantages":"The Stack data structure provides constant time complexity (O(1)) for insertion (push), removal (pop), and peeking (peek) operations.",
+        "drawback":"The Stack data structure has a high potential for stack overflow errors if too many items are pushed onto the stack, resulting in a runtime error.",
+        "usecase":"When there is a need to maintain a Last-In-First-Out (LIFO) order of data, Stack can be used. the stack data structure is commonly used is in web browser history. When you visit a new web page, the URL is added to the stack. If you click the back button, the previous URL is popped from the stack and displayed. If you then click the forward button, the URL is pushed back onto the stack and the corresponding web page is displayed."
+    }
+]
 }
 
   
