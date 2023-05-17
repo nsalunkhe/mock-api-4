@@ -475,11 +475,56 @@
         "id":2,
         "question":"Nearest smaller element to right",
         "answer":"https://drive.google.com/file/d/1B7RrLOmFz1OL2RQk_tok4bEW8q67Gb3w/view?usp=sharing",
-        "time_complexity":"s O(n) because it iterates through the input array once, performing constant time operations for each element.",
+        "time_complexity":"O(n) because it iterates through the input array once, performing constant time operations for each element.",
         "space_complexity":"The space complexity of this code is O(n) because it creates a new array of the same size as the input array to store the results, and a stack to store the intermediate values. However, the size of the stack at any given time will not exceed the length of the input array, so the space complexity is still O(n).",
         "advantages":"The Stack data structure provides constant time complexity (O(1)) for insertion (push), removal (pop), and peeking (peek) operations.",
         "drawback":"The Stack data structure has a high potential for stack overflow errors if too many items are pushed onto the stack, resulting in a runtime error.",
         "usecase":"When there is a need to maintain a Last-In-First-Out (LIFO) order of data, Stack can be used. the stack data structure is commonly used is in web browser history. When you visit a new web page, the URL is added to the stack. If you click the back button, the previous URL is popped from the stack and displayed. If you then click the forward button, the URL is pushed back onto the stack and the corresponding web page is displayed."
+    },
+    {
+        "id":3,
+        "question":"Nearest smaller element to left",
+        "answer":"https://drive.google.com/file/d/1R0sUmaMb5F3DnDrUpXd1wdoMDNjFyl46/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"",
+        "drawback":"",
+        "usecase":""
+    },
+    {
+        "id":4,
+        "question":"Nearest greater element to right",
+        "answer":"https://drive.google.com/file/d/1a45I8elo4KEOHAAY-hI908mOytfCNXXy/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"",
+        "drawback":"",
+        "usecase":"The use case for this code could be in a variety of scenarios, such as financial analysis, where you want to find the next highest stock price or index value. It could also be useful in weather forecasting, where you want to find the next highest temperature or pressure value. In general, the NGE algorithm can be useful in any situation where you need to find the next highest or lowest value in a series of data."
+    },
+    {
+        "id":5,
+        "question":"Nearest greater element to left",
+        "answer":"https://drive.google.com/file/d/1zShzgBXIykfPY-Ijtx8g7IDovjZINxkN/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"",
+        "drawback":"",
+        "usecase":""
+    }
+],
+"queue":[
+
+],
+"linkedlist":[
+    {
+         "id":1,
+        "question":"Insert a node at the head",
+        "answer":"",
+        "time_complexity":"",
+        "space_complexity":"",
+        "advantages":"",
+        "drawback":"",
+        "usecase":""
     }
 ]
 }
