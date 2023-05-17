@@ -102,7 +102,7 @@
     },
     {
         "id":2,
-        "questions":"How do you use props to pass data between components in React.js and what are some best practices to follow when doing so?",
+        "question":"How do you use props to pass data between components in React.js and what are some best practices to follow when doing so?",
         "answer":"Props: is a way to pass data from parent component to child component. some of the best practices are 1.Always pass data down the component tree, from parent to child .this ensures that the data flow is unidirectional and makes it easier to reason about your application state 2.Avoid modifying props directly. props should be considerd read-only and any changes to props should be made in the parent component and passed down again. 3. Use default props to provide fallback values ,you can define default values for props using the default props property on your component. 4.Be careful when passing complex objects or functions as props. It's generally better to keep your props simple and avoid passing complex data structures or functions if possible.",
         "code":"https://drive.google.com/file/d/1_KdLrBKR2KzwIWutpeQ4cGluW1NhgtAi/view?usp=sharing"
     },
