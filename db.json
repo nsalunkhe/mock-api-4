@@ -247,7 +247,7 @@
     {
         "id":3,
         "question":"What are web-servers?",
-        "answer":"1.Web server is a computer program that serves content to clients over the www it recieves requests from clients (browsers) and responds with web pages,documents. 2.It is essential component of the internet infrastructure allowing users to access websites and other online resources.3. e.g. Apache,Nginx,microsoft,NodeJs,",
+        "answer":"1.Web server is a computer program that serves content to clients over the www it recieves requests from clients (browsers) and responds with web pages,documents. 2.It is essential component of the internet infrastructure allowing users to access websites and other online resources.3. e.g. Apache : Robert McCool (1995),Nginx : The software was created by Igor Sysoev and publicly released in 2004. Nginx is free and open-source software, released under the terms of the 2-clause BSD license.,microsoft : Internet Information Services, also known as IIS, is a Microsoft web server that runs on Windows operating system and is used to exchange static and dynamic web content with internet users. IIS can be used to host, deploy, and manage web applications using technologies such as ASP.NET and PHP., NodeJs : developed by Ryan Dahl May 27, 2009. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser. ",
         "code":""
     },
     {
