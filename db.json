@@ -355,11 +355,139 @@
 ],
 "day2js":[
     {
-        "id":1
-
+        "id":1,
+        "question":"What is the DOM (Document Object Model) and why is it important for web development?",
+        "answer":"The Document Object Model (DOM) is like a map of a web page that JavaScript can use to interact with and change the page. It represents the structure of the page as a tree of objects. Each object corresponds to an element, attribute, or text on the page.The DOM is important because it allows developers to make web pages interactive. With JavaScript, they can access and modify the content, layout, and style of the page. For example, they can change text, add or remove elements, and update the appearance of the page based on user actions.By using the DOM, developers can create dynamic and responsive web applications that can adapt and change in real-time. It provides a set of tools and methods to easily manipulate the elements on a web page, making it easier to build interactive and engaging websites.",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"How does the DOM tree structure relate to HTML elements on a web page?",
+        "answer":"The DOM tree structure closely mirrors the structure of HTML elements on a web page. When a web page is loaded into a browser, the browser parses the HTML code and creates a representation of the page in the form of a tree structure called the Document Object Model (DOM).Each HTML element, such as <html>, <head>, <body>, <div>, <p>, <h1>, etc., is represented by a corresponding node in the DOM tree. These nodes are organized in a hierarchical structure, with the <html> element at the top as the root node, and the other elements as its child nodes, grandchildren nodes, and so on.",
+        "code":"https://drive.google.com/file/d/12VgK_J4rgDu-PIeufH3t4T84ANqioEmX/view?usp=sharing"
+    },
+    {
+        "id":3,
+        "question":"Explain the concept of DOM manipulation and give examples of common tasks performed using JavaScript.",
+        "answer":"DOM manipulation refers to the process of using JavaScript to dynamically modify the Document Object Model (DOM) of a web page. It involves making changes to the structure, content, or style of the web page in response to user interactions, events, or programmatic actions.Here are a few examples of common tasks performed using JavaScript DOM manipulation:Changing text content: You can update the text of an element by accessing its node in the DOM tree and modifying its textContent property. For example, element.textContent = New text; would change the text content of the element to New text. Modifying HTML structure: You can add, remove, or modify elements in the DOM tree. For instance, you can create a new element using document.createElement('tagName'), append it to an existing element with parentElement.appendChild(newElement), or remove an element using element.remove().Updating element attributes: JavaScript allows you to modify attributes of elements, such as class, id, src, href, etc. You can access and modify these attributes using properties like element.setAttribute('attributeName', 'value') or element.attributeName = 'value'. Changing element styles: You can dynamically modify the styles of elements using JavaScript. For example, you can access an element's style property and set specific CSS properties like element.style.color = 'red' to change its text color. Responding to user actions: Event listeners can be added to elements to trigger specific actions when certain events occur, such as clicking a button, hovering over an element, or submitting a form. JavaScript can then manipulate the DOM based on these events. DOM manipulation with JavaScript enables developers to create dynamic and interactive web pages by updating content, structure, and styles in real-time based on user interactions or other events.",
+        "code":"https://drive.google.com/file/d/1_dXFlQVLosBzAaucCaK-lN3RXHyn7hUK/view?usp=sharing"
+    },
+    {
+        "id":4,
+        "question":"What are some methods and properties available in JavaScript to access and manipulate DOM elements?",
+        "answer":"JavaScript provides a variety of methods and properties to access and manipulate DOM elements. These methods and properties allow developers to interact with elements, retrieve information, modify content, and apply styles. Here are some commonly used ones: 1.document.getElementById(): This method allows you to select an element by its unique ID. It returns a reference to the element, which you can then use to manipulate it.2.document.querySelector() and document.querySelectorAll(): These methods allow you to select elements using CSS selector syntax. querySelector() returns the first matching element, while querySelectorAll() returns a collection of all matching elements.3.element.textContent: This property allows you to access or modify the text content of an element.4.element.innerHTML: This property allows you to access or modify the HTML content of an element.5.element.setAttribute() and element.getAttribute(): These methods allow you to set or retrieve the value of an attribute on an element.6.element.style: This property allows you to access or modify the inline styles of an element.These are just a few examples of the many methods and properties available in JavaScript for accessing and manipulating DOM elements. By utilizing these methods and properties effectively, you can dynamically modify the content, structure, and style of web pages, creating interactive and engaging user experiences.",
+        "code":"https://drive.google.com/file/d/1tm3gb3tuN16XfkoRfUxBL4h8ohMk0mJC/view?usp=sharing"
+    },
+    {
+        "id":5,
+        "question":"What is the difference between the innerHTML and textContent properties in JavaScript?",
+        "answer":"The innerHTML and textContent properties in JavaScript are used to access or modify the content of an element, but they differ in how they handle HTML markup.he innerHTML property retrieves or sets the HTML content within an element, including any HTML tags and their associated markup. It returns a string that represents the HTML content as it appears within the element.On the other hand, the textContent property retrieves or sets only the textual content of an element, excluding any HTML tags. It returns a string representing the concatenated textual content of all the element's descendants.",
+        "code":"https://drive.google.com/file/d/1Vs17J-oShe339RjtawkqC4vYrC-6yZkb/view?usp=sharing"
+    },
+    {
+        "id":6,
+        "question":"How can you dynamically create and add elements to the DOM using JavaScript?",
+        "answer":"To dynamically create and add elements to the DOM using JavaScript, you can use the following steps:1.Create a new element: Use the document.createElement() method to create a new element of the desired type.2.Set element properties and attributes: If desired, you can modify properties and attributes of the newly created element.3.Set element content: You can set the content of the element by modifying its textContent or innerHTML property.4.Attach the new element to the DOM: To add the newly created element to the DOM, you need to identify the parent element to which you want to append the new element. Use the appendChild() method on the parent element to attach the new element as its child.",
+        "code":"https://drive.google.com/file/d/1lbIAPMwDPIYLRO1jZA1_SAsTSS_FUZSU/view?usp=sharing"
+    },
+    {
+        "id":7,
+        "question":"What is event delegation in JavaScript? How does it work and why is it useful?",
+        "answer":"Event delegation is a technique in JavaScript where instead of attaching an event listener to individual elements, you attach it to a parent element. The parent element then handles events triggered by its child elements through event bubbling or event capturing.",
+         "code":"https://drive.google.com/file/d/1YVm4sMuFFx0CqJlAuGDlDIhw60SxhJ6r/view?usp=sharing"    
+    },
+    {
+        "id":8,
+        "question":"Explain the concept of event bubbling and event capturing in JavaScript.",
+        "answer":"Event Bubbling:We can understand event bubbling as a sequence of calling the event handlers when one element is nested in another element, and both the elements have registered listeners for the same event. So beginning from the deepest element to its parents covering all its ancestors on the way to top to bottom, calling is performed......| Event capturing: Event Capturing is opposite to event bubbling, where in event capturing, an event moves from the outermost element to the target. Otherwise, in case of event bubbling, the event movement begins from the target to the outermost element in the file. Event Capturing is performed before event bubbling but capturing is used very rarely because event bubbling is sufficient to handle the event flow.....|Stopping bubbling:Beginning from the target and moving towards the top is the bubbling i.e. starting from the child to its parent, it moves straight upwards. But a handler can also take decision to stop the bubbling when the event has been processed completely. In JavaScript, we use the event.stopPropagation () method.",
+        "code":"https://drive.google.com/drive/folders/1gqX-aGBDMU_yih4AVR-oR5V0LYODpzdK?usp=sharing"
+    },
+    {
+        "id":9,
+        "question":"How would you prevent the default behavior of an event in JavaScript?",
+        "answer":"the event.preventDefault() method is used to prevent the default submission behavior.When a form is submitted, it typically sends a request to the server and reloads the page. However, by calling event.preventDefault(), the default behavior of the form submission is prevented, and the code inside the event handler can be executed without the page being reloaded.In this specific code, after preventing the form submission, the event handler retrieves the values entered in the username and password fields. It then checks if the entered username is already taken by checking the existence of an item with that username in the localStorage. If the username is already taken, an alert is displayed to the user, and the execution of the event handler is stopped using return.If the username is not taken, the username and password are stored in the localStorage using localStorage.setItem(). Finally, the code redirects the user to the login page by changing the window.location.href to './login.html'.By preventing the default form submission behavior, the code can perform custom validations, store data, and control the user's navigation without triggering the default form submission action.",
+        "code":"https://drive.google.com/file/d/1CEFaLH8RgSXJ3K3BKkkv-lZv9SjCkeso/view?usp=sharing"
+    },
+    {
+        "id":10,
+        "question":"What is the purpose of the this keyword in event handlers?",
+        "answer":"In event handlers, the this keyword refers to the element that triggered the event. It allows you to access and manipulate the properties and methods of that specific element within the event handler function.The purpose of using this in event handlers is to provide a convenient way to interact with the element that triggered the event. It allows you to access the element's attributes, modify its styles, retrieve its value, or perform any other operations specific to that element.",
+        "code":"https://drive.google.com/file/d/1EmgvTjjfDC9OPKsGHjlo0M8Ydc6BGFgw/view?usp=sharing"
+    },
+    {
+        "id":11,
+        "question":"Explain the concept of event propagation and how it can be controlled in JavaScript.",
+        "answer":"Event propagation, also known as event flow, is the process through which events in the DOM are propagated or transmitted from the target element that triggered the event to its parent elements or ancestor elements in the DOM tree. There are two types of event propagation: event bubbling and event capturing.Event Bubbling:In event bubbling, when an event occurs on an element, it first triggers the event on that element and then propagates to its parent elements in the DOM tree, one level at a time, until it reaches the root element (usually the <html> element).  Event listeners attached to parent elements can also be triggered by the same event. This is the default behavior for most events in JavaScript. Event Capturing: In event capturing, the event is triggered on the root element first, then propagates down through its descendant elements until it reaches the target element. Event listeners attached to ancestor elements can be triggered before the event reaches the target element.",
+        "code":""
     }
 ],
-"day3js":[],
+"day3js":[
+    {
+        "id":1,
+        "question":"What is a closure in JavaScript? Provide an example.",
+        "answer":"A closure can be defined as a JavaScript feature in which the inner function has access to the outer function variable. The closure has three scope chains listed as follows:Access to its own scope.Access to the variables of the outer function.Access to the global variables.",
+        "code":"https://drive.google.com/file/d/19VkXyykPBVCeu2zy8s-pjHyXM-DdytCC/view?usp=sharing"
+    },
+    {
+        "id":2,
+        "question":"How does JavaScript handle scope and variable access in closures?",
+        "answer":"Variable Capture: When a function is defined within another function, it capture or retains access to all the variables in its parent function's scope, including the parameters and local variables.Lexical Scope Chain: Each function has its own scope, and when a variable is accessed within a function, JavaScript first looks for the variable within the function's local scope. If the variable is not found, it searches the next outer scope in the scope chain until it reaches the global scope.Retaining Reference: Closures retain a reference to their parent scopes even after the parent functions have completed execution. This allows them to access and manipulate variables from their parent scopes.Garbage Collection: JavaScript's garbage collector automatically handles memory management. If a closure is still referenced by any variable or function, the variables in its parent scope will remain in memory. Once the closure and all references to it are no longer reachable, the memory is freed up.Closures provide powerful functionality by allowing functions to access and manipulate variables from their parent scopes, providing encapsulation and data privacy. However, it's important to be mindful of memory usage when working with closures, as they can lead to potential memory leaks if not managed properly.",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"Explain the concept of prototype-based inheritance in JavaScript.",
+        "answer":"The JavaScript inheritance is a mechanism that allows us to create new classes on the basis of already existing classes. It provides flexibility to the child class to reuse the methods and variables of a parent class.It facilitates child class to acquire all the properties and behavior of its parent class.",
+        "code":"https://drive.google.com/file/d/1eprxbucUrZddiQ4yVEEDlPRQOD-BT9KJ/view?usp=sharing"
+    },
+    {
+        "id":4,
+        "question":"OOPS concept :- 1.Classes and Objects",
+        "answer":"Classes and Objects: A class is a blueprint or template that defines the properties (attributes) and behaviors (methods) that an object of that class will have. An object is an instance of a class, representing a specific entity in the program.",
+        "code":"https://drive.google.com/file/d/1vJzqn2vqePcuNM-cKuln1yHu6Vxbvp7e/view?usp=sharing"
+    },
+    {
+        "id":5,
+        "question":"OOPS concept:- 2.Encapsulation",
+        "answer":"Encapsulation: Encapsulation is the practice of bundling data and the methods that operate on that data together within a class. It allows for data hiding, where the internal state of an object is kept private and can only be accessed through the defined methods.",
+        "code":"https://drive.google.com/file/d/1Dd9jdZGWyydB7kdumdXjC_LNPjOOqbJA/view?usp=sharing"
+    },
+    {
+        "id":6,
+        "question":"OOPS concept:- 3.Inheritance",
+        "answer":"Inheritance enables the creation of a new class (derived class or child class) by inheriting the properties and methods from an existing class (base class or parent class). The derived class can extend or override the behavior of the base class, promoting code reuse and establishing a hierarchical relationship between classes.",
+        "code":"https://drive.google.com/file/d/1zzMC21l_Jz_whLSozCJ0Ba2HCbor8wKV/view?usp=sharing"
+    },
+    {
+        "id":7,
+        "question":"OOPS concept:- 4.Polymorphism",
+        "answer":"Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables different classes to define their own implementation of methods with the same name, providing flexibility and extensibility in handling different object types through a common interface.",
+        "code":"https://drive.google.com/file/d/1NIKaH_a6CG_4t0gzOuqODYjJbIN6oxYb/view?usp=sharing"
+    },
+    {
+        "id":8,
+        "question":"OOPS concept:- 5.Abstraction",
+        "answer":"Abstraction is a concept in programming that allows us to represent complex systems or entities in a simplified manner, by focusing on the essential features and hiding unnecessary details. It involves breaking down a system into smaller, more manageable components, and defining interfaces or behaviors that provide a high-level view of how those components interact, without revealing the internal workings.n simpler terms, abstraction allows us to think about and work with complex things using simplified models. It enables us to understand and use objects or systems without having to understand every intricate detail, making our code more readable, maintainable, and scalable. Abstraction helps in managing complexity and promoting code reusability, as we can create abstract classes or interfaces that define common behaviors, while leaving the implementation details to the specific classes or objects that inherit from them.",
+        "code":"https://drive.google.com/file/d/1S-s0wYTrAslBml6-r3Q5QWLqX0jQm2W0/view?usp=sharing,"
+    },
+    {
+        "id":9,
+        "question":"What is the difference between classical inheritance and prototypal inheritance?",
+        "answer":"Classical Inheritance: Classical inheritance is based on the concept of classes and objects.In classical inheritance, classes are used to create blueprints that define the properties and behaviors of objects.Objects are instances of classes, and they inherit properties and behaviors from their class.Prototypal Inheritance:Prototypal inheritance is based on the concept of objects and prototypes. It is commonly found in languages like JavaScript.In prototypal inheritance, objects are created directly from other objects. Every object has an internal link to another object called its prototype.Objects can inherit properties and behaviors from their prototype object, and the chain of prototypes forms a prototype chain.Objects can be created using the Object.create() method or through constructor functions.summery:  classical inheritance, where classes and a hierarchical structure are used, and prototypal inheritance, where objects are directly created from other objects and inherit properties and behaviors from their prototypes.",
+        "code":"https://drive.google.com/file/d/1FAb7Xrn-E9AKXUcNWlsm9qNnY30VC_MK/view?usp=sharing"
+    },
+    {
+        "id":10,
+        "question":"What are the advantages of using closures in JavaScript? Provide real-world use cases.",
+        "answer":"Closures in JavaScript offer several advantages and can be used in various real-world scenarios. Here are some advantages and use cases:Encapsulation: Closures allow for data encapsulation by creating a private scope. Variables and functions defined within a closure are not accessible from the outside, providing a level of privacy and preventing unwanted access or modification.Data Privacy: Closures enable the concept of private variables. Variables defined within a closure are accessible only within that closure and its nested functions, making them inaccessible from the outside world. This helps in preventing unintentional modification or interference with the data.Function Factories: Closures can be used to create function factories, where a function returns another function with pre-configured settings or behavior. This is useful when creating multiple instances of similar functions with different configurations.Event Handlers: Closures are commonly used in event handling scenarios. Event listeners often require access to variables or functions defined in their enclosing scope. Closures allow you to maintain the context and access necessary data even when the event handler is executed at a later time.Asynchronous Operations: Closures are often utilized in asynchronous operations such as callbacks and promises. They help in capturing and preserving the necessary context or data required for the asynchronous operation to execute correctly, even when it occurs at a later point in time.Memoization and Caching: Closures can be used to implement memoization and caching techniques. By storing the results of expensive computations in a closure, subsequent calls to the same function with the same inputs can be retrieved from the closure's stored data, improving performance.Overall, closures in JavaScript offer powerful capabilities for encapsulation, data privacy, maintaining state, and creating function factories. They are commonly used in scenarios where persistent state or access to variables in an outer scope is required, such as event handling, asynchronous operations, and optimizing performance through memoization.",
+        "code":""
+    },
+    {
+        
+    }
+
+
+],
 "day4js":[],
 "day5js":[],
 "day6js":[],
