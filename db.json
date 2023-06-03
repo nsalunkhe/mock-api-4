@@ -483,7 +483,22 @@
         "code":""
     },
     {
-        
+        "id":11,
+        "question":"What is the difference between a function declaration and a function expression in JavaScript?",
+        "answer":"Function Declaration:A function declaration is a statement that defines a named function using the function keyword followed by the function name, a list of parameters in parentheses, and the function body enclosed in curly braces.Key points about function declarations:Function declarations are hoisted, which means they are moved to the top of their scope during the compilation phase, allowing them to be called before they are defined in the code.Function declarations create a variable in the current scope with the same name as the function name and assign the function to that variable.Function declarations can be used anywhere within their scope.Function Expression:A function expression is an assignment of a function to a variable or a constant. It defines an anonymous function or a function without a name.Key points about function expressions:Function expressions are not hoisted like function declarations. They must be defined before they are used in the code.The function is assigned to a variable or constant, which can be used to call the function.Function expressions can be either named or anonymous, but anonymous function expressions are more common.",
+        "code":"https://drive.google.com/file/d/1IZv-WzdaoXfcoITayOeAoXa7rC4nYW4b/view?usp=sharing"
+    },
+    {
+        "id":12,
+        "question":"How does the this keyword behave in different contexts in JavaScript?",
+        "answer":"1.Global Scope:When this is used in the global scope (outside of any function or object), it refers to the global object, which is usually the window object in browsers or the global object in Node.js.2.Object Method: When this is used within a method of an object, it refers to the object itself. The value of this is determined at the time the method is called.3.Event Handlers:In event handler functions, such as those used with DOM events, this typically refers to the element that triggered the event.Constructor Function:When this is used inside a constructor function, it refers to the newly created object that is being instantiated.5.Explicit Binding:The value of this can be explicitly set using the call(), apply(), or bind() methods. These methods allow you to specify the context in which a function should be invoked.",
+        "code":"https://drive.google.com/file/d/1Rs6S0onMGRymA_SJ4IUZVvosAaDBRu98/view?usp=sharing"
+    },
+    {
+        "id":12,
+        "question":"Explain how the concept of hoisting works in JavaScript and provide an example.",
+        "answer":"Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This means that regardless of where declarations appear in the code, they are effectively hoisted to the top of their scope.However, it's important to note that only the declarations are hoisted, not the initializations or assignments. Variables are initialized with the value undefined by default until their assignments are encountered during runtime.",
+        "code":""
     }
 
 
