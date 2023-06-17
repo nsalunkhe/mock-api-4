@@ -602,6 +602,13 @@
         "advantages":"Simple and easy to understand.Works well for small arrays or when the position of the element to be searched is known.",
         "drawback":"Inefficient for large arrays as it iterates through all elements.Not suitable for searching multiple occurrences of the same element.",
         "usecase":" checking if a certain username already exists in a list of usernames"
+    },
+    {
+        "id":9,
+        "question":"find common elements in two sorted arrays 1.in ascending order 2.in descending array",
+        "answer":"https://drive.google.com/file/d/1lbh_rpeP81AW4IYFWcZQjj7dNDYYmr8Y/view?usp=sharing",
+        "time_complexity":"The time complexity of the given code is O(N), where N is the length of the input arrays arr1 and arr2. This is because the code iterates through the arrays once, comparing elements at corresponding indices, and performs a constant-time operation for each comparison.",
+        "space_complexity":"The space complexity of the code is O(1) because it uses a fixed amount of additional space to store the variables left, right, and count. The space required does not depend on the size of the input arrays."
     }
 ],
 "stack":[
@@ -652,6 +659,66 @@
         "time_complexity":"O(n)",
         "space_complexity":"O(n)",
         "advantages":"",
+        "drawback":"",
+        "usecase":""
+    },
+    {
+        "id":6,
+        "question":"Reduce string",
+        "answer":"https://drive.google.com/file/d/12eCyBK9STKaDxXDDY9Nls4XkKcxexyRX/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"Simplicity: The method uses a straightforward approach of iterating through the string and comparing adjacent characters. It doesn't require complex data structures or algorithms.Time Efficiency: The method has a time complexity of O(n), where n is the length of the input string. It achieves this by iterating through the string once and performing constant-time operations for each character. This makes it efficient for handling strings of various lengths. Space Efficiency: The method utilizes an array to store the resulting string without adjacent duplicates. It only stores the necessary characters, avoiding the need for excessive memory allocation. The space complexity is also O(n), where n is the length of the input string.",
+        "drawback":"One potential drawback of the given method is that it only removes adjacent duplicate characters. If there are non-adjacent duplicate characters in the string, they will not be removed. For example, in the string abccba, the method will output abba instead of aba because the duplicate 'c' characters are not adjacent.",
+        "usecase":""
+    },
+    {
+        "id":7,
+        "question":"String cut",
+        "answer":"https://drive.google.com/file/d/1h8eVqgSu7pGEHT4N1R_VrlmpDwQZ4xce/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"Flexibility: The code handles both even and odd lengths of the input string and adjusts the rearrangement accordingly. Modularity: The code is divided into a function, allowing for reusability and easy maintenance. Readability: The code uses clear variable names and comments, making it relatively easy to understand the logic.",
+        "drawback":"",
+        "usecase":"if you want to change format of name."
+    },
+    {
+        "id":8,
+        "question":"Alan and Christopher",
+        "answer":"https://drive.google.com/file/d/15cA4adXtS3U2h6dOwb_3yCdfA2utnA0K/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"",
+        "drawback":"",
+        "usecase":""
+    },
+    {
+        "id":9,
+        "question":"Smaller neighbour element to left without using constructor",
+        "answer":"https://drive.google.com/file/d/1sBqvcgLVgZOANRhPB2DwNAR_-XgF7eEe/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"",
+        "drawback":"",
+        "usecase":""
+    },
+    {
+        "id":10,
+        "question":"Smaller neighbour element to right without using constructor",
+        "answer":"https://drive.google.com/file/d/1OhVKqiHEzsz_UqyksZaIM3m2k9_LhuzO/view?usp=sharing",
+        "time_complexity":"O(n)",
+        "space_complexity":"O(n)",
+        "advantages":"",
+        "drawback":"",
+        "usecase":""
+    },
+    {
+        "id":11,
+        "question":"Find next greater element",
+        "answer":"https://drive.google.com/file/d/1xMfZwS3OwdKWdvTKmxMYmH9gmqzLdLX5/view?usp=sharing",
+        "time_complexity":"The time complexity of the given code is O(N), where N is the number of elements in the array arr. The code iterates over each element in the array exactly once, performing constant-time operations for each element. Therefore, the time complexity is linear with respect to the size of the input.",
+        "space_complexity":"The space complexity of the code is O(N). The code utilizes a stack data structure (s) to store elements, and the size of the stack can grow up to N elements in the worst case, depending on the input array. Additionally, the result array is used to store the intermediate results, which also takes up O(N) space. Overall, the space complexity is O(N).",
+        "advantages":" the use of a stack in the given code offers advantages such as efficient LIFO operations, simplified algorithm design, space efficiency, support for intermediate results, and a clear code structure.",
         "drawback":"",
         "usecase":""
     }
