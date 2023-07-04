@@ -169,7 +169,9 @@
         "code":"https://drive.google.com/file/d/191qEAxra05dgm_Bm1V_4M3pkK0fgoyGM/view?usp=sharing"
     },
     {
-
+       "id":6,
+       "question":"How does state management differ between class components and functional components in React?",
+       "answer":""
     }
 ],
 "day4react":[],
@@ -508,6 +510,63 @@
 "day5js":[],
 "day6js":[],
 "day7js":[],
+
+"top20html":[
+    {
+        "id":1,
+        "question":"What is HTML and what does it stand for?",
+        "answer":"HTML stands for Hypertext Markup Language.It is the standard markup language used for creating the structure and presenting the content of web pages.HTML uses a set of tags and attributes to define the various elements and components of a webpage such as headings, paragraphs, links, images, tables, forms, and more.It provides a way to structure and organize the content, allowing web browsers to interpret and display the web pages to users. HTML is the backbone of the web and is essential for creating and designing websites.",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"What are the different versions of HTML?",
+        "answer":"HTML (HyperText Markup Language): This was the first version of HTML, introduced in 1991.HTML2: This version was released in 1995 and introduced new features like tables and form elements.HTML3: Released in 1997, HTML3 added support for more interactive elements and improved styling options.HTML4: HTML4, released in 1997, brought further enhancements and introduced features such as framesets, scripting support with JavaScript, and the concept of Cascading Style Sheets (CSS).XHTML (Extensible HyperText Markup Language): XHTML is an XML-based version of HTML, following stricter rules of syntax. It was introduced in 2000.HTML5: HTML5 is the latest and most significant version of HTML. It was released in 2014 and introduced numerous new features and improvements, including semantic elements, multimedia support, canvas for drawing, video and audio elements, local storage, geolocation, and more. HTML5 also provided better support for mobile devices and responsive design.",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"What is the purpose of a doctype declaration in HTML?",
+        "answer":"A doctype declaration in HTML is used to specify the version of HTML being used in a web document.It is placed at the very beginning of an HTML file, before the opening <html> tag. The primary purpose of a doctype declaration is to inform the web browser or parser about the markup language and version in which the document is written.",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"What are the differences between HTML and XHTML?",
+        "answer":"HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) are both markup languages used for creating web pages, but they have some key differences:Syntax: HTML has a more forgiving syntax, allowing certain elements to be unclosed or self-closed without issues. XHTML, on the other hand, follows stricter syntax rules borrowed from XML, requiring all elements to be properly closed and nested correctly.Tag Naming: HTML allows tag names to be written in any case (uppercase or lowercase), while XHTML mandates that all tag names must be written in lowercase.Attribute Quoting: In HTML, attribute values can be left unquoted or wrapped in single quotes ('') or double quotes. In XHTML, all attribute values must be enclosed in double quotes.Self-Closing Tags: HTML has a few elements that are traditionally written without a closing tag, such as <br>, <img>, and <input>. In XHTML, all elements must be properly closed, including those that are self-closing, using the <tag /> syntax.It's important to note that XHTML was initially introduced as the successor to HTML, promoting stricter adherence to XML standards. However, due to its strictness and compatibility issues with existing web pages, HTML5 has become the de facto standard for web development, and the use of XHTML has diminished significantly.",
+        "code":""
+    },
+    {
+        "id":5,
+        "question":"What is the significance of the meta tag in HTML",
+        "answer":"The <meta> tag in HTML is used to provide metadata or additional information about an HTML document. It does not represent visible content on the web page but instead conveys information to browsers, search engines, and other web-related services.Character Encoding: One common use of the <meta> tag is to specify the character encoding for the HTML document. This is achieved by including the following meta tag in the <head> section of the HTML document: <meta charset='UTF-8'>The charset attribute indicates the character encoding, such as UTF-8, which ensures proper rendering of special characters and international text.Page Description: Another important use of the <meta> tag is to provide a concise description of the webpage content. This is often used by search engines to display a summary or snippet of the page in search results. The following meta tag is used for this purpose:<meta name='description' content='Description of the webpage'>Viewport Configuration: The <meta> tag can also be used to define the viewport settings for responsive web design. This allows the webpage to adjust its layout and scale appropriately on different devices. For example:<meta name='viewport' content='width=device-width, initial-scale=1.0'>Search Engine Optimization (SEO): Various meta tags can be used to enhance the visibility and search engine ranking of web pages. For instance, the <meta> tag can specify keywords, author, robots instructions, and more.",
+        "code":""
+    },
+    {
+        "id":6,
+        "question":"Explain the difference between <div> and <span>?",
+        "answer":"<div> and <span> are both commonly used container elements in HTML, but they have different purposes and default behaviors:<div>: The <div> element is a block-level container that is used to group and structure larger sections of content on a webpage. It represents a division or a generic container with no specific meaning. By default, <div> elements start on a new line and occupy the full width available in their parent container. They can contain other block-level elements, such as headings, paragraphs, lists, images, and more. <div> elements are often styled and targeted with CSS for layout and formatting purposes.<span>: The <span> element, on the other hand, is an inline container used to apply styles or target specific portions of text within a larger block of content. It has no inherent semantic meaning and does not affect the flow of the content. By default, <span> elements are displayed inline, meaning they do not create line breaks. They are commonly used to apply CSS styles, such as color, font, or background, to a specific portion of text or to encapsulate and target elements within a sentence or paragraph.",
+        "code":""
+    },
+    {
+        "id":7,
+        "question":"What are the different types of heading tags in HTML?",
+        "answer":"HTML provides six heading tags, ranging from <h1> to <h6>, to represent different levels of headings. These heading tags are used to structure the content hierarchy and indicate the importance and hierarchy of the text within a webpage. Here's a breakdown of the different heading tags: <h1>: The <h1> tag represents the highest level of heading and is typically used for the main heading or the title of the page. It carries the most weight in terms of importance. <h2>: The <h2> tag represents a second-level heading, slightly lower in hierarchy compared to <h1>. It is used for section headings or major subsections. <h3> to <h6>: The remaining heading tags, <h3> to <h6>, represent lower levels of headings, progressively decreasing in importance. They are used for subheadings within sections, subsections, and so on.",
+        "code":""
+    },
+    {
+        "id":8,
+        "question":"How do you create a hyperlink in HTML?",
+        "answer":"To create a hyperlink in HTML, you can use the <a> (anchor) element along with the href attribute to specify the destination URL or target location. Here's an example: The href attribute specifies the URL or web address  <a href='https://www.example.com'>Click here</a> 2. href attribute points to the 'about.html' page located in the same directory as the current HTML file. You can also create a link to another page within your website by specifying the relative URL. <a href='/about.html'>About Us</a>  3. The target attribute can take values like '_blank' to open the link in a new browser tab or window, 'self' to open the link in the same window, or 'parent' or 'top' for more specific targeting.",
+        "code":""
+    },
+    {
+        "id":9,
+        "question":"Explain the concept of semantic HTML.",
+        "answer":"",
+        "code":""
+    }
+],
 "day1html":[],
 "day2html":[],
 "day3html":[],
@@ -522,6 +581,36 @@
 "day5mongo":[],
 "day6mongo":[],
 "day7mongo":[],
+
+
+"top20Node":[
+    {
+        "id":1,
+        "question":"What is Node.js? How does it differ from other server-side frameworks?",
+        "answer":"Node.js is an open-source,cross-platform runtime enviornment that allows developers to build server-side- and networking applications using javascript.it differs from other server-side frameworks in that it uses event-driven,non-blocking I/O model,which makes it lightweight and efficient for handling concurrent requests.Traditionaly,JavaScript was primarily used for client-side scripting within web browsers.However,Node.js enables JavaScript to be executed on the server-side,allowing developers to build scalable and high-performance applications that can handle a large number of simultanious connections.Node.js utilizes the V8 JavaScript engine,the same engine used by google chrome , which provides high-speed execution of code in Js.It also  has a vast ecosystem of modules and packages available through the Node Package Manager,allowing developers to easily incorporate existing solutions into their applications.Overall,Node.js provides a streamlined and unified JavaScript enviorement for both client and server-side developement,making it popular choice for building web applications, API's, real-time applications, and microservices.",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"What is NPM and what is its role in Node.js?",
+        "answer":"NPM stands for Node Package Manager and it plays a crucial role in the Node.js ecosystem.It is a command-line tool that comes bundled with Node.js and allows developers to easily manage dependencies,pakage distribution,project management Here are some key points about NPM: 1.Dependency Management: NPM helps in managing the dependencies of a Node.js project.It allows developers to specify the required packages and their versions in a package.json file.NPM then resolves and installs these dependencies,ensuring that the project has access to the required modules. Package Distribution : NPM serves a central repository for sharing and discovering packages.It provides a platform for developers to publish their own packages and make them available for others to use. This enables easy code reuse and accelrates developement by leveraging existing solutions.3Command-Line Interface: NPM offers a command-line interface that allows developers to execute various operations such as installing packages,updating dependencies,running scripts,and more.It provides a rich set of commands and options to efficiently manages and interact with the packages within a project.SCripts and lifecycle hooks: NPM allows developers to define custom scripts in the package .json.these scripts can be executed using npm run command, making it convinient to define and automate various project-related tasks.NPM also provides lifecycle hooks that run at specific stages during package installation,such as pre-install,post-install,pre-publish.5.Versioning and Semver:NPM follows semantic versioning(semver)conventions,which provide a standerdized way of specifying and managing package versions.Semver helps ensure compatibility and allows developers to define version ranges to handle updates and dependencies accurately.",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"What are the core modules in Node.js?",
+        "answer":"Node.js provides several core modules that are available for use without requiring any external dependencies. These modules are built-in and can be accessed using the require function. Some of the core modules in Node.js are:fs(file system):This module provides methodes foer interacting with the file system,allowing you to read,write,manipulate files and directories.2.http and https: These modules enables you to create HTTP and HTTPS servers and make HTTP/HTTPS requests.They provide functions for handeling server-side logic ,routing,and interacting with web clients.path:The PAth modules provides utilities for working file paths.It allows you to manipulate and resolve file paths,extracted file extentions,and handle platform -specific path differences "
+    }
+],
+"day1node":[
+     {
+        "id":1,
+        "question":"What is Node.js, and what are its key features?",
+        "answer":""
+       ,"code":"" 
+    }
+
+],
 "array":[
     {
        "id":1,
