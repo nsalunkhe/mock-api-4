@@ -638,6 +638,51 @@
 "day5html":[],
 "day6html":[],
 "day7html":[],
+
+"top20css":[
+ {
+    "id":1,
+    "question":"What is the Box model in CSS? Which CSS properties are a part of it?",
+    "answer":"A rectangle box is wrapped around every html element.The box model is used to determine the height and width of rectangular box.The CSS Box consists of width and height (or in the absence of that, default values and the content inside), padding, borders, margin. Content: Actual Content of the box where the text or image is placed. Padding: Are around the content(space between the border and content). Border:Area surrounding the padding. Margin:Area surrounding the border.",
+    "code":""
+ },
+ {
+    "id":2,
+    "question":"Name all the modules which are used in the current version of CSS.",
+    "answer":"Selectors,Box Model,Backgrounds and Borders,Text Effects,2D/3D Transformaions,Animations,Multiple Column Layout,User Interface.",
+    "code":""
+ },
+ {
+    "id":3,
+    "question":"Write all the properties of the flexbox.",
+    "code":"There are several properties of the flexbox that are used in the HTML webpage.1.flex-direction: row - all items aligned in one line;flex-direction: row-reverse - items are aligned in reverse order where last element comes first and first comes last; flex-direction: column - items align in column ; flex-direction: column-reverse - items align in reverse order and column direction. 2.flex-wrap:wrap -The flex items break into multiple lines. flex-wrap:nowrap- here The flex items are laid out in a single line which may cause the flex container to overflow.This is the default value.flex-wrap: wrap-reverse- Behaves the same as wrap but cross-start and cross-end are permuted (reverse order). Global values of flex-wrap :- 1.inherit; 2.initial; 3.revert; 4.revert-layer; 5.unset; 3.flex-flow: row wrap; items wrap in row wise direction. flex-flow: row-reverse nowrap; items align in one row only.flex-flow: column wrap;- Items wrap in column direction one by one. flex-flow: column wrap-reverse; Items wrap in column direction one by one but in reverse order. 4.justify-content:start; Pack items from the start justify-content: center;-Pack items around the center.justify-content: end;Pack items from the end.justify-content: flex-start; Pack flex items from the start.justify-content: flex-end;Pack flex items from the end.justify-content: left; Pack items from the left. justify-content: right; Pack items from the right. justify-content:space-between;-  Distribute items evenly The first item is flush with the start,the last is flush with the end. justify-content: space-around; Distribute items evenly Start and end gaps are half the size of the space. justify-content: space-evenly; Distribute items evenly Start, in-between, and end gaps have equal sizes. justify-content: stretch; Distribute items evenly Stretch 'auto'-sized items to fit the container. justify-content: safe center;If the item overflows the alignment container, then the item is aligned as if the alignment mode is start. The desired alignment will not be implemented.5.align-items: start;- Pack items from the start.align-items: center;- Pack items around the center.align-items: end;- Pack items from the end.align-items: stretch;Flex items are stretched such that the cross-size of the item's margin box is the same as the line while respecting width and height constraints.6.align-content:start;-Pack items from the start.align-content: center;Pack items around the center.align-content: end;-Pack items from the end.align-content: space-between;-The spacing between each pair of adjacent items is the same.align-content: space-around;-The empty space before the first and after the last item equals half of the space between each pair of adjacent items."
+ },
+ {
+    "id":4,
+    "question":"What is the difference between padding and margin?",
+    "answer":"In CSS, rhe margin property by which we can create space around elements.like margin-top,left,bottom,right also margin property has some defined values like Auto : Using this property browser calculates the margin , length: it sets the margin values in px,pt,cm etc. , % : it sets the width % of the element.Inherit: By this property we can inherit the margin property from the parent element. Padding: In CSS ,padding is the property by which we can generate space around an elements content as well as inside any known border.like Padding-top,right,bottom,left.Negative values are not allowed in Padding",
+    "code":""
+ },
+ {
+    "id":5,
+    "question":"What are the pseudo classes and what are they used for?",
+    "answer":"Pseudo classes are similar to pseudo elements,but instead of styling a part of an element,they apply styles when an element is in a certain state.For example,you could style a button diffirently based on whether the user has their mouse pointer over it,or when click the button.you can also use when you want to style only certain occurance of elements in a row eg. styling the first tab in a series of tabs. .link:hover { ... },.link:active { ... },.tab:first-child { ... },.tab:last-child { ... },.avatar:nth-child(2n) { ... }",
+    "code":"https://drive.google.com/file/d/1souMy9ZeLZ-nkjipxmI30n_60nFiNmaP/view?usp=sharing"
+ },
+ {
+    "id":6,
+    "question":"Should you use !important?",
+    "answer":"The use of '!important' in CSS should generally be acoided it is considered a last resort option for overriding styles and can lead to specificity and maintainability issues in your code.here are a few reasons why it is generally not recommended to use '!important': 1.Spacificity conflicts: '!important' override styles regardless of their specificity(Specificity is a set of rules used in CSS to determine which styles should be applied to an element when multiple conflicting styles are targeting it.),which can make it difficult to maintain and update your stylesheet.It can lead to unexpected behavior when trying to override or update styles later on.2.Code maintainability:When '!important' is used extensively,it becomes harder to understand and manage the cascading order of styles.it can make your codebase more complex and harder to maintain.3.Debugging difficulties:When troubleshooting styling issues,'!important' can make it more challenging to identify and fix conflicts.It can create a situation where you are forced to add even more !important declarations to override previous ones." 
+ }
+],
+"day1css":[],
+"day2css":[],
+"day3css":[],
+"day4css":[],
+"day5css":[],
+"day6css":[],
+"day7css":[],
+
 "day1mongo":[],
 "day2mongo":[],
 "day3mongo":[],
@@ -890,7 +935,11 @@
         "drawback":"",
         "usecase":""
     }
-]
+],
+"facilities":[
+
+],
+"bookings":[]
 }
 
   
