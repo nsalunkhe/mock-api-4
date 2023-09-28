@@ -91,6 +91,11 @@
         "question":"what is the difference between functional and class components?",
         "answer":"Class Component : 1.Defined as Javascript class that extends the react component class 2. Class components has state 3.render method is required that returns the UI of the component 3.It can use lifecycle methods  Functional Component: 1.defined as a plain js function 2.It uses return to to render Ui of the component 3.do not have any lifecycle methods 3.It does not require any state or lifecycle method.",
         "code":""
+    },
+    {
+        "id":8,
+        "question":"What is server-side-rendering and client side rendering?",
+        "answer":"lets take a scenerio where you are somebody who creates cakes and you have to dispatch it to your customers now you have 2 ways The first way is you dispatch all the ingridients with the instructions to the customer and let them build the cake themselves and the second way is you build the cakes yourself and then send them. in the first scenerio you dont know how well the client would create the cake? how tasty it would be and they are using the right ingridients in the right mix and so on. but in the second case you are sure that even though a little bit work on your end but the end result would be much more tasty and consistant. similarly ,if you are doing client side rendering you are sending all the javascript and basically the whole chunk of javascript to the client and let the client construct the dom . if you are doing server-side rendering you construct the whole page on your server on your end and send a fast HTML representation of the page alongside more javascript if you want to to the client "
     }
 ],
 "day2react":[
@@ -631,7 +636,92 @@
         "code":""
     }
 ],
-"day1html":[],
+"day1html":[
+    {
+        "id":1,
+        "question":"Briefly explain what HTML stands for and its purpose in web development.",
+        "answer":"HTML stands for HtperTextMarkup Language. It is the standerd language used to create and design web pages. HTML is the basic building block of a web page and provides the structure and sementics for the content displayed on the internet.It uses markup,consisting of various elements and tags, to define the structure and layout of web page.These elements allow for the proper presentation of text, images ,links , forms, and other media on the web.HTML enables browsers to interpret and display content in a consistant and structured manner making it a fundamental technology for frontend developement. ",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"Explain the basic structure of an HTML document.",
+        "answer":"The basic structure of an HTML document consist selveral essential elements 1.<DOCTYPE html> : This decleration defines the document type and version of HTML being used. In modern HTML5 documents ,its common to see <!DOCTYPE html> to specify HTML5. 2.<html>: The <html> element is the root element that wraps all the content on the web page. 3.<head>: The <head> element contains meta information about the document, such as its title ,character encoding, links to stylesheets, and other metadata. 4.<title>: the <title> element is within the <head> section and defines the title of the web page , which appears in the browsers title bar or tab.  5.<body> : The <body> element contains the main content of the web page ,including headings,paragraph,images,links,and other elements. refer code to check basic html document.",
+        "code":"https://drive.google.com/file/d/16vnA7yN5A7H_V1YUQR1scPiM2eExk0Y0/view?usp=sharing"
+    },
+    {
+        "id":3,
+        "question":"What is the purpose of the <html>, <head>, and <body> tags in HTML?",
+        "answer":"1.<html> tag : The <html> tag is the root element of an HTML document. It encapsulates all the content that is part of the web page. this tag provides the structure for the entire HTML document, containing both the <head> and <body> section. 2.<head> tag : the <head> tag is a section within the HTML document that contains meta-information and resources related to the page like stylesheet link source. It includes elements like <title> which defines the title of the page , as well as links to stylesheets, scripts, and other meta tags for character encoding and viewport settings. It does not directly render content visible to users on the webpage. 3.<body> tag : The <body> tag defines the main content area of the HTML document that is displayed in the web browser. It encompasses all the visible elements such as headings , paragraphs, Images, links, forms, and other multimedia. The content within the <body> tag is what users see and interact with when viewing the web page. In summery the <html> tag defines the overall structure of the html document, the <head> tag contains metadata and resources related to the page, and the <body> tag encapsulates the visible content of the web page the users interact with.",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"What does the <title> tag do in HTML?",
+        "answer":"The <title> tag in HTML is used to define the title of the web page. It is placed within the <head> section of an HTML document and provides essential information about the page's content. The text specified within the <title> tag is displayed in the title bar of the web browser. This helps users identify the content or purpose of the webpage when multiple tabs are open.",
+        "code":""
+    },
+    {
+        "id":5,
+        "question":"What is the use of heading tags(h1 to h6)?",
+        "answer":"Headings tags in HTML are used to define headings or titles for sections of a webpage. They provide a way to structure and organize content, allowing both users and search engines to understand the heirarchy and importance of diffirent sections within the page. There are 6 levels of heading tags in HTML, ranging from the most important and highest level <h1> to the least important level ,<h6>.  <h1> : Represent the highest-level heading and typically used for the main title or heading of the entire page. <h2> to <h6> : represent lower-level headings , with decreasing importance as the number increases. They are used to subdivide sections of the content, where <h2> is a subsection of the content, where <h2> is the subsection of <h1>,<h3>. using heading tags helps in several ways: 1.Sementic structure : Heading tags provide a sementic structure to the document , making it more accessible and meaningful to assistive technologies and search engines. 2.Accessibility: Properly structured headings improve the accessibility of the web page, aiding users with screen readers or other assistive devices in navigating and understanding the content. 3.SEO(Search Engine Optimization): Search engines use heading tags to understand the content hierarchy and revelance. proper use of headings can positively impact the SEO of a webpage. 4.Readability: Heading tags enhance the readability of the content by breaking it into logical section and making it easier for readers to scan and understand the page's structure.",
+        "code":""
+    },
+    {
+        "id":6,
+        "question":"Explain the <p> tag in HTML.",
+        "answer":"The <p> tag in HTML stands for paragraph and is used to define a paragraph of text.It's one of the most common and fundamental HTML tags used to structure and format textual content on a webpage. when you enclose a block of text within a pair of <p> tags , the web browser will typically display that text with some space above and below, visually seprating it from other content.It's good practice to use <p> tag to wrap textual content for better readability and organization",
+        "code":""
+    },
+    {
+        "id":7,
+        "question":"What is <a> tag is used for in HTML?",
+        "answer":"The <a> tag in HTML , also known as the anchor tag is used to create hyperlinks or clickable text or images that lead to other web pages or resources, either within the same website or to external websites. It's fundamental element for navigation and interactivity on the web.",
+        "code":""
+    },
+    {
+        "id":8,
+        "question":"Describe the <img> tag and its attributes?",
+        "answer":"The <img> tag in HTML is used to embed(insert) images within a web page. Images are an essential component of web design, providing visual content and enhancing the user experience.The <img> tag is self-closing , meaning it dosent have closing tag. here are some important attributes associated with the <img> tag 1.src:(source) Specifies the URL or path of the image to be displayed. 2.alt:(Alternate text) Provides alternative text that is displayed if the image cannot be loaded or accessed. It is also crucial for accessibility and SEO. width:Specifies the width of the image in pixels or as a percentage of its container. height: Specifies the height of the image in pixels or as a percentage of a container.",
+        "code":""
+    },
+    {
+        "id":9,
+        "question":"Explain the usage of the <ul> , <ol> , <li> tags in HTML?",
+        "answer":"1.The <ul> tag in HTML is used to create an unordered list,which is a list of items presented in a bulleted format without any specific order or sequences Each item in the list is represented by the <li> tag. 2.<ol> : (Ordered list) the <ol> tag in HTML is used to create an ordered list, which is a list of items presented in a numbered or ordered format. 3.<li> The tag is used within both <ul> and <ol> elements to define each individual item in the list. It is a block-level element and is typically displayed as a bullet point in an unordered list or a number in an ordered list.",
+        "code":""
+    },
+    {
+        "id":10,
+        "question":"What is the purpose of the <table> tag in HTML?",
+        "answer":"The <table> tag in HTML is used to create a table, which is a way to organize and display data in a structured grid format. Tables are essential for presenting information in rows and columns, making it easier for users to understand and compare data. The main components associated with the <table> tag are : 1.<tr>Represents a row within the the table. 2.<td>: Represents a cell within a table row and contains the actual content or data. 3.<th>: Represents a table header cell , typically used to label columns or rows. The Content inside <th> is bold and centered by default.",
+        "code":""
+    },
+    {
+        "id":11,
+        "question":"Describe the <form> tag in html?",
+        "answer":"The <form> tag in HTML is used to create an interactive form on a web page. forms allow users to input data,such as text,numbers,selection which can be submitted to server for processing. forms are fundamental part of web developement,enabling various actons like user authentication,data submission,serach functionalities. The <form> tag encapsulates form elements like input fields,checkboxes,radio buttons,submit buttons, and more which is used to collect user input. key attributes associated with the <form> tag : 1.action : Specifies the URL or file path where the form data will be submitted for processing. 2.method: Defines the HTTP method to be used for submitting the form data.",
+        "code":""
+    },
+    {
+        "id":12,
+        "question":"Explain the sementic elements and their importance.",
+        "answer":"Semantic HTML elements are HTML elements that convey meaning or describe the content they contain , providing a clear structure and context for the content within a web page . these elements play a crucial role in improving the accessibility , maintainability and search engine optimization(SEO) of a website. here are some common semantic HTML elements and their significance 1. <header> : Represents the introductory content at the begining of a section or webpage containing headings,logos,navigation. importance: Provides a clear introduction and structure to the content. 2.<nav> : Represents a section of the page that contais navigation links,typically used to navigate within the current page or other pages.Imporatance: Clearly identifies and seprates navigation links for better user experience and accessibility. 3.<main>: Represents the main content area of the page containing the central content that is unique to that specific page. Importance: Helps assistive technologies and search engines understand the primary content of the page.  4.<section>: Represents a thematic grouping of content , typically containing related elements or topics.Importance: Enhances the organization and understanding of content within the webpage. 5.<article>: Represents a self contained , independent piece of content such as a blog post,article, or comment. 6.<aside>:Represent the content related to surrounding often displayed as a sidebar or callout. 7.<footer>: Represents the footer of a section or a webpage, usually containing information like copyright,contact details, or related links. Importance: Provides a clear conclusion to the content and often includes important details. Using semantic HTML elements helps convey the structure and meaning of a webpage to both humans and machines, making the content more accessible and understandable. It also contributes to improved SEO,as search engines can better interpret and index the content based on the semantics provided by these elements .Additionaly ,sementic HTML facilitates collaboration and maintainibility by clearly defining the purpose and structure of diffirent parts of the webpage.",
+        "code":""
+    },
+    {
+        "id":13,
+        "question":"What is the main difference between <div> and <span> elements in HTML?",
+        "answer":"<div> Element: The <div> (division) element is a block-level container used to group and organize various elements or content together, often for styling purposes or applying CSS. It creates a new block or box, typically starting on a new line and spanning the full width of its parent container. It's used to structure larger sections of a webpage and is often styled with CSS for layout purposes. It can contain other block-level and inline elements, including other <div> elements.<span> Element: The <span> element is an inline-level container used to apply styles or manipulate specific portions of text within a larger block of content. It doesn't create a new block or box and typically does not affect the layout of the content around it. It's useful for applying CSS styles, scripts, or making specific text selections for JavaScript actions. It can be used within a block-level element or inside other inline elements.Main Differences: <div> is a block-level element, while <span> is an inline-level element. <div> is used to create larger sections or blocks of content, often for layout and styling purposes, whereas <span> is used to style or target specific inline elements or portions of text within a larger content block. <div> is typically used for structural purposes and grouping larger content, while <span> is used for styling or applying styles to smaller, inline portions of content. In summary, <div> is primarily for layout and structural organization, creating block-level elements, while <span> is for inline styling or manipulation of smaller segments of text within a block-level or inline element.",
+        "code":""
+    },
+    {
+        "id":14,
+        "question":"How would you create a hyperlink that opens in a new tab?",
+        "answer":"To create a hyperlink that opens in a new tab or window , you can use the target attribute with the value _blank. this tells the browser to open the link in a new tab or window.",
+        "code":""
+    }
+],
 "day2html":[],
 "day3html":[],
 "day4html":[],
