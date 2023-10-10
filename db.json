@@ -46,7 +46,6 @@
         "img":"https://images.unsplash.com/photo-1603816245457-fe9c80b740ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGlwaG9uZSUyMDEwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
 ] ,
-"jobs":[],
 "task":[],
 "blogs":[],
 "day1react":[
@@ -1102,7 +1101,161 @@
 "facilities":[
 
 ],
-"bookings":[]
+"bookings":[],
+
+"jobs": [
+      {
+        "job_title": "Software Engineer",
+        "tech_stack": ["Java", "Spring", "Hibernate", "React"],
+        "experience": "3-5 years",
+        "company_name": "TechCorp India",
+        "location": "Bengaluru, Karnataka",
+        "salary": "₹8,00,000 - ₹12,00,000",
+        "description": "TechCorp India is seeking a skilled Software Engineer to join our team. In this role, you'll work on cutting-edge projects, utilizing technologies like Java, Spring, Hibernate, and React. You'll collaborate with a talented team to design and implement software solutions that meet the needs of our clients and enhance user experiences.",
+        "logo_url": "https://media.istockphoto.com/id/1431603444/photo/software-developer-at-the-office.webp?b=1&s=612x612&w=0&k=20&c=2hha2dG9QMzoVu7F4_j0ckyf6ci7JnGSs1karfBbgHg="
+      },
+      {
+        "job_title": "Data Analyst",
+        "tech_stack": ["Python", "SQL", "Tableau"],
+        "experience": "2-4 years",
+        "company_name": "DataTech India",
+        "location": "Mumbai, Maharashtra",
+        "salary": "₹6,00,000 - ₹8,00,000",
+        "description": "DataTech India is looking for a talented Data Analyst. As a Data Analyst, you will be responsible for analyzing and interpreting complex data sets to provide valuable insights to our clients. You'll work with a diverse team using tools such as Python, SQL, and Tableau to uncover patterns, trends, and opportunities for optimization.",
+        "logo_url": "https://media.istockphoto.com/id/1408255024/photo/developers-discussing-programming-code.webp?b=1&s=612x612&w=0&k=20&c=dW_gC3uh5Q3GyVGc-4ZY3BBDsr40V6SsnJAUp28uf-c="
+      },
+      {
+        "job_title": "UX/UI Designer",
+        "tech_stack": ["Figma", "Sketch", "Adobe XD", "HTML/CSS"],
+        "experience": "3-6 years",
+        "company_name": "DesignSolutions India",
+        "location": "New Delhi, Delhi",
+        "salary": "₹7,00,000 - ₹9,00,000",
+        "description": "DesignSolutions India is in search of a creative UX/UI Designer. As a Designer, you will be responsible for crafting exceptional user experiences and intuitive interfaces. You'll use tools like Figma, Sketch, Adobe XD, HTML, and CSS to design and prototype engaging and user-friendly applications, contributing to the success of our projects.",
+        "logo_url": "https://media.istockphoto.com/id/1401460590/photo/businessman-working-on-laptop-with-document-management-icon.webp?b=1&s=612x612&w=0&k=20&c=p2tYxuQPPuesnEj6My_dQ31bR3BQn49vvJ2IninnJZo="
+      },
+      {
+        "job_title": "Full Stack Developer",
+        "tech_stack": ["JavaScript", "Node.js", "React", "MongoDB"],
+        "experience": "4-7 years",
+        "company_name": "CodeCrafters",
+        "location": "Hyderabad, Telangana",
+        "salary": "₹10,00,000 - ₹15,00,000",
+        "description": "Join CodeCrafters as a Full Stack Developer and be part of our innovative team. You will work with cutting-edge technologies such as JavaScript, Node.js, React, and MongoDB to develop and maintain robust web applications. Your role will involve collaborating with both front-end and back-end teams to deliver seamless user experiences.",
+        "logo_url": "https://cdn.pixabay.com/photo/2015/10/30/10/03/app-1013616_640.jpg"
+      },
+      {
+        "job_title": "Digital Marketing Specialist",
+        "tech_stack": ["SEO", "SEM", "Google Analytics", "Social Media Marketing"],
+        "experience": "3-5 years",
+        "company_name": "DigitalMarketingExperts",
+        "location": "Mumbai, Maharashtra",
+        "salary": "₹7,00,000 - ₹10,00,000",
+        "description": "DigitalMarketingExperts is seeking a talented Digital Marketing Specialist to drive our online presence. You will implement strategic digital marketing initiatives using SEO, SEM, Google Analytics, and Social Media Marketing. Your efforts will contribute to enhancing our brand visibility and attracting a larger audience.",
+        "logo_url": "https://cdn.pixabay.com/photo/2015/12/22/13/27/laptop-1104066_640.jpg"
+      },
+      {
+        "job_title": "AI/ML Engineer",
+        "tech_stack": ["Python", "TensorFlow", "PyTorch", "Machine Learning"],
+        "experience": "3-6 years",
+        "company_name": "AIInnovators",
+        "location": "Bengaluru, Karnataka",
+        "salary": "₹9,00,000 - ₹12,00,000",
+        "description": "AIInnovators is looking for an AI/ML Engineer to join our team. As an AI/ML Engineer, you'll work on cutting-edge AI projects using Python, TensorFlow, PyTorch, and machine learning algorithms. Your role will involve developing, testing, and deploying AI models to solve real-world problems.",
+        "logo_url": "https://cdn.pixabay.com/photo/2019/04/29/07/04/software-development-4165307_640.jpg"
+      },{
+        "job_title": "DevOps Engineer",
+        "tech_stack": ["Docker", "Kubernetes", "Jenkins", "AWS"],
+        "experience": "4-7 years",
+        "company_name": "CloudBuilders",
+        "location": "Pune, Maharashtra",
+        "salary": "₹12,00,000 - ₹16,00,000",
+        "description": "Join CloudBuilders as a DevOps Engineer and play a vital role in our software development lifecycle. You'll utilize Docker, Kubernetes, Jenkins, and AWS to automate and streamline our deployment and infrastructure processes. Your efforts will ensure a robust and scalable platform for our applications.",
+        "logo_url": "https://media.istockphoto.com/id/1197257945/photo/programmers-cooperating-at-it-company-developing-apps.webp?b=1&s=612x612&w=0&k=20&c=Hgv8ewuBLHGrCfNRvtI1aj_IQrEwf7FEbJjTB1cKnn4="
+      },
+      {
+        "job_title": "Front End Developer",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
+        "experience": "2-5 years",
+        "company_name": "WebTechies",
+        "location": "Bengaluru, Karnataka",
+        "salary": "₹6,00,000 - ₹9,00,000",
+        "description": "WebTechies is seeking a skilled Front End Developer to create amazing user interfaces. As a Front End Developer, you'll leverage your expertise in HTML, CSS, JavaScript, and React to build visually appealing and interactive web applications that provide exceptional user experiences.",
+        "logo_url": "https://media.istockphoto.com/id/984117566/photo/website-design-developing-programming-and-coding-technologies.webp?b=1&s=612x612&w=0&k=20&c=VzmmY2phgdy4gR3JsTY3EAFTZ4XPglM9JJ0hAdhdQSM="
+      },
+      {
+        "job_title": "Content Writer",
+        "tech_stack": ["Copywriting", "SEO", "Content Strategy", "Grammarly"],
+        "experience": "2-4 years",
+        "company_name": "ContentCraft",
+        "location": "Mumbai, Maharashtra",
+        "salary": "₹5,00,000 - ₹7,00,000",
+        "description": "ContentCraft is looking for a creative Content Writer to produce engaging and informative content. You'll be responsible for creating high-quality articles, blog posts, and website content using your skills in copywriting, SEO, and content strategy. Your work will help drive our brand's online presence and engagement.",
+        "logo_url": "https://media.istockphoto.com/id/1179188076/photo/website-design-developing-programming-and-coding-technologies.webp?b=1&s=612x612&w=0&k=20&c=0yd_AdDQXNTRg_UCNZu77rnutUi8NY0toRb5HWyntk0="
+      },
+      {
+        "job_title": "Mobile App Developer",
+        "tech_stack": ["React Native", "JavaScript", "Redux", "Firebase"],
+        "experience": "3-6 years",
+        "company_name": "AppInnovate",
+        "location": "Chennai, Tamil Nadu",
+        "salary": "₹8,00,000 - ₹12,00,000",
+        "description": "AppInnovate is seeking a talented Mobile App Developer to build exceptional cross-platform applications using React Native. As a Mobile App Developer, you'll work on developing, testing, and deploying mobile apps that deliver a seamless user experience across various devices and platforms.",
+        "logo_url": "https://media.istockphoto.com/id/1200075866/photo/first-bump-between-colleagues-at-work-everyday-work-in-the-office.webp?b=1&s=612x612&w=0&k=20&c=CE47WzkHx-w2wn52TTNVN4J9D8L37PVI22ydI87-cZM="
+      },
+      {
+        "job_title": "Network Security Analyst",
+        "tech_stack": ["Firewalls", "Intrusion Detection Systems", "SIEM", "Cybersecurity"],
+        "experience": "5-8 years",
+        "company_name": "SecureNet",
+        "location": "Delhi, Delhi",
+        "salary": "₹10,00,000 - ₹15,00,000",
+        "description": "SecureNet is looking for a skilled Network Security Analyst to ensure the safety and integrity of our network systems. As a Network Security Analyst, you'll be responsible for implementing and managing security measures, analyzing vulnerabilities, and responding to security incidents.",
+        "logo_url": "https://media.istockphoto.com/id/939787416/photo/two-female-programmers-working-on-new-project-they-working-late-at-night-at-the-office.webp?b=1&s=612x612&w=0&k=20&c=-G7c_KKfvVnjjXSnl7qYz24vB-5GXqFghMAjw49Sr2U="
+      },
+      {
+        "job_title": "HR Manager",
+        "tech_stack": ["Human Resources", "Employee Relations", "Recruitment", "Performance Management"],
+        "experience": "7-10 years",
+        "company_name": "PeopleFirst Corp",
+        "location": "Bengaluru, Karnataka",
+        "salary": "₹15,00,000 - ₹20,00,000",
+        "description": "Join PeopleFirst Corp as an HR Manager and lead our human resources department. You'll oversee various HR functions, including employee relations, recruitment, performance management, and policy implementation, ensuring a positive work environment and effective employee engagement.",
+        "logo_url": "https://media.istockphoto.com/id/1395144844/photo/diverse-businesspeople-smiling-cheerfully-during-an-office-meeting.webp?b=1&s=612x612&w=0&k=20&c=KXK9MkhuV_mC94W7AHnFXRDgFluXSXLjtXsfNSRx2mA="
+      },
+      {
+        "job_title": "Database Administrator",
+        "tech_stack": ["SQL", "Oracle", "Database Optimization", "Backup & Recovery"],
+        "experience": "4-7 years",
+        "company_name": "DataMasters",
+        "location": "Mumbai, Maharashtra",
+        "salary": "₹10,00,000 - ₹14,00,000",
+        "description": "DataMasters is looking for a skilled Database Administrator to manage and optimize our databases. As a Database Administrator, you'll handle SQL, Oracle, and ensure efficient database performance, backup, and recovery processes, ensuring data integrity and availability.",
+        "logo_url": "https://media.istockphoto.com/id/1420017371/photo/excited-call-centre-agents-fist-bump-and-celebrating-deal-promotion-and-sale-from-above-in.webp?b=1&s=612x612&w=0&k=20&c=koZjmDEvsdQTsMwWw79ltTskXrjzx57JrNP2XNWu5ow="
+      },
+      {
+        "job_title": "UI/UX Researcher",
+        "tech_stack": ["User Research", "Usability Testing", "Prototyping", "User Interviews"],
+        "experience": "3-6 years",
+        "company_name": "UXInnovations",
+        "location": "Bengaluru, Karnataka",
+        "salary": "₹8,00,000 - ₹11,00,000",
+        "description": "UXInnovations is seeking a passionate UI/UX Researcher to drive user-centered design. As a UI/UX Researcher, you'll conduct user research, usability testing, and interviews to gather insights and create designs that enhance user satisfaction and usability.",
+        "logo_url": "https://media.istockphoto.com/id/1071467916/photo/group-of-young-students-working-on-an-assignment.webp?b=1&s=612x612&w=0&k=20&c=kxSeI0k4Vv5l05wvkswdoyWpQtV59X3PxhCyhqa2DXg="
+      },
+      {
+        "job_title": "Financial Analyst",
+        "tech_stack": ["Financial Modeling", "Excel", "Budgeting", "Financial Reporting"],
+        "experience": "2-5 years",
+        "company_name": "FinancialPros",
+        "location": "New Delhi, Delhi",
+        "salary": "₹6,00,000 - ₹9,00,000",
+        "description": "FinancialPros is looking for a Financial Analyst to analyze financial data and support decision-making. As a Financial Analyst, you'll create financial models, handle budgeting, and prepare financial reports to guide the company's financial strategies and investments.",
+        "logo_url": "https://media.istockphoto.com/id/1395144844/photo/diverse-businesspeople-smiling-cheerfully-during-an-office-meeting.webp?b=1&s=612x612&w=0&k=20&c=KXK9MkhuV_mC94W7AHnFXRDgFluXSXLjtXsfNSRx2mA="
+      }
+    
+    ]
+  
 }
 
   
