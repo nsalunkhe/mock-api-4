@@ -48,6 +48,77 @@
 ] ,
 "task":[],
 "blogs":[],
+"top20angular":[
+    {
+        "id":1,
+        "question":"What is Angular and why is it popular for web developement ?",
+        "answer":"Angular Js is open-source framework used for frontend developement.maintained by google and community of developers.It is popular in web developement due to its ability to streamline and simplify developement of dynamic,single page web application.it provides structured framework and set of tools that enable developers to build scalable and maintainable applications.following things also make the Angular special 1.Modularity and Reusability 2.Two way data binding: Angular offers two way data binding ,automatically synchronizing the model and view components,reducing the need for manual dom manipulation and enhancing developement speed.3.component-based architecture4.Dependency injection: Angular's built in dependency injection system facilitates the management od application components and their dependencies.promoting modular design and ease of testing.4 Cross-Platform Developement : Angular supports cross-platform developement for web , mobile and desktop applications using frameworks like lonic and Nativescript. 5 Angular provides tools and technique to optimize application performance , ensuring a smooth and responsive user experience",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"Explain the difference between AngularJS and Angular?",
+        "answer":"They both are popular frameworks for building dynamic web applications,but they have significant differences 1.Architecture : ANgularJs: AngularJS is an MVC framework, where the application is organized in Model,view,controller. Angular : Angular follows the component based architecture.applications are recognized into components,which are more modular and allow for cleaner structure. Language : AngularJS:It uses JavaScript for Developement Angular: It uses TypeScript superset of JavaScript.TWo way data binding : AngularJs : Two way data binding is a default feature , allowing automatic synchronization of data between model and view Angular : Two way data binding is still available but is more controlled and explicit promoting better performance and understanding of data flow. Change Detection : AngularJs : Digest cycle-based change detection mechanism Angular: uses a more efficient and granular change detection stratergy resulting in improved performance.Rendering : AngularJs : uses Regular DOM manipularion for rendering. Angular : utilizes a virtual DOM and change detection to optimize rendering and improve performance. Mobile Support : AngularJS : Mobile support is limited ,often requiring additional frameworks like lonic for mobile application. Angular : offers better mobile support with frameworks like lonic and NativeScript. allowing the developement of cross-platform mobile apps. performance : Generally offers better performance due to redesigned architecture, improved change detection and rendering optimization. ",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"What is data binding in Angular?Describr it's types.",
+        "answer":"Data binding in Angular is a mechanism that allows you to establish a connection between the application data , enabling seamless synchronization and communication between two. It simplifies and automates the process of updating the view in response to changes  in the applications state. Interpolation is a one-way data binding technique used to display component data in the view .you can embed variables or expressions within double curly braces that Angular evalute and replace with the corrosponding values. Property Binding : Property binding is a one-way data binding that allows you to set an HTML element's property to the value of component's property or expression <img [src]='imageUrl' 3.Event binding: this allows you to listen for events (clicks) raised by the DOM and exacutes the function in response. Two way Binding : Two way data binding is a combination of property binding and event binding allowing for automatic synchronization of data between the component and the dom.changes in the dom update the component and vice versa <input [(ngModel)]='username'>",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"How do you create a component in Angular?",
+        "answer":" ng new frontend  ng generate component my-component",
+        "code":"https://drive.google.com/file/d/1NkcoLIbdDOkQcDW3mBMuBYWWaR_gXLX_/view?usp=sharing"
+    },
+    {
+        "id":5,
+        "question":"Explain the purpose of Angular modules.",
+        "answer":"Angular modules are essential organizational features in Angular applications They are used to group related components,directives,pipes,and services into cohesive units,facilitating modularity,reusability and maintainibility of the application.Each application is typically comprised of multiple modules.Here are the key purposes and benifits of Angular modules.1.Modularity: Angular modules help break down a large application into smaller,manageable and reusable parts. this modularity promotes maintainability and improves the organization of codebase.Angular does not have pre-defined list of modules as part of the core framework.instead ,Angular allows developers to create their own custom modules based on the specific needs and features of their application.However there are some commonly used Angular modules and third-party modules that developers frequently use in Angular applications. 1.FormsModule and ReactiveFormsModule : handling forms 2.HTTP ClientModule:To make HTTP requests and interactive with API 3.Routermodule: navigation 4.CommonModule: commonly used directives ngIf ngFor 5.BrowserModule : ensures that application runs in a browser environment 6.NGRx : A powerful state management library for Angular applications,providing modules like store,effects,Actions,and more for handling applications state in a predictable and scalable way.7.ngx translate : A module for implimenting internationalization and localization in angular applications. 8.ngx-pagination : A module for adding pagination to lists in angular application. 9.Angular-charts : customizable charts",
+        "code":""
+    },
+    {
+        "id":6,
+        "question":"what is dependency injection in Angular, and why is it important?",
+        "answer":"An Angular Dependency injection is a design pattern and a core concept that allows you to manage the dependencies of your components and services. It is a technique used to achieve loose coupling and enhance the modularity, reusablity,and testability of your application. In simpler terms dependency injection is about providing the necessary dependencies such as services and objects to a component or service from the outside ,rather than creating them within the component or service itself.This approch decouples the creation and usage of dependencies,making the code more maintainable and easier to manage. Features : Reduced Coupling : Using dependency injection reduces the tight coupling between components and services promoting a more loosly coupled and flexible architecture.this means that components and services can be modified or replaced without affecting other parts of the application.In simpler terms dependency injection is about providing necessary dependencies such as services or other objects to a component or service from the outside ,rather than creating them within the component or service itself. This approch decouples the creation usage of dependencies making the code more maintainable and easier to manage.1.Modularity and Reusability : By injecting dependencies you can isolate the functionality of diffirent parts of your application.Those components and services can be reused in various parts of the application or even in diffirent application,promoting modularity and reusability.2.Flexibility and Maintanibility : Dependency injection allows you to change or update the behavior of a component or service by providing diffirent implimentations of the injected dependency.This flexibility makes it easier to maintain and modify the application without impacting other part of the codebase. 3.Testability : with dependency injection you can easily provide mock or stub implimentations od dependencies for testing purposes.This enables effective unit testing of components and services as you can control and manipulate the behavior of the dependencies during testing. 4.SEpration of Concerns : Dependency injection helps seprate the creation of objects (concern with how the object is created) from the usage of objects(how the object is used).This sepration leads to cleaner and more maintainable code.5.Reduced Coupling : using dependency injection reduces the tight coupling between components and services promoting a more loosely coupled and flexible architecture. This means that components and services can be modified or replaced without affecting other parts of application.6.Single reusability principle : Dependency injection encourages adherence to the SRP by promoting the idea that a class or function should have a single responsibility,making the codebase more organized and easier to comrehend.",
+        "code":""
+
+    },
+    {
+        "id":7,
+        "question":"How do you handle forms in angular?",
+        "answer":"Follow code",
+        "code":"https://drive.google.com/file/d/1X7UVBcXot9yEt6Hjwt45pddi25ateKrx/view?usp=sharing"
+    },
+    {
+        "id":8,
+        "question":"What are angular directives?Provide examples.",
+        "answer":"Angular directives are special instructions or markers in the DOM that Angular recognizes and uses to manipulate or extend the behavior and appearance of elements.They are an essential part of Angular applications,allowing developers to build dynamic ,interactive, and data-driven user interfaces.These are following : 1.Component Directives : Components are directives with a template.They encapsulate a portion of the user interface,along with associated behavior,into a reusable unit.Components are the most commonly used directives in Angular applications.like in @Component({ selector:'app-example',template:'<p>This is an example component.</p>'}) . 2.Attribute directives: Attribute directives change the appearance or behavior of a DOM element by adding or removing attributes.They are used to modify the behavior of existing elements. import{Directive,ElemRef,Renderer2} from '@angular/core'; @Directive({selector:'[appHighlight]'})  follow code ",
+        "code":"https://drive.google.com/drive/folders/1Hzmuy9B8ToEQP6TK0a57GnRvPYsXeEE8?usp=sharing"
+    },
+    {
+        "id":9,
+        "question":"Describe Angulars HTTP client and its usage.",
+        "answer":"Angulars HTTP client is a powerful tool that simplifies making HTTP requests to web servers,interacting with API's, and handling responses in Angular application.the module name is @angular/common/http it provides an easy to use API for sending HTTP requests and processing responses asynchronously.",
+        "code":""
+    },
+    {
+        "id":10,
+        "question":"Explain the concept of Angular services and their role in application.",
+        "answer":"Angular services are a fundamental and powerful feature that plays a critical role in organizing and sharing code across an application.A service in Angular is a class that is typically responsible for specific set of functions or tasks, such as fetching data from a server,performing business logic,or managing state.Key features of Angular services :1.Reusability and modularity: Services encourage code reusability by allowing you to centralize and encapsulate specific functionalities.you can use the same service in multiple components,promoting a modular architecture.2.Seprations of concerns: services help seprate business logic and data from components this promotes the single responsibility principle and enhances code maintainability.3.Dependency injection.4.Singleton Instances: By default,Angular services are singleton instances,meaning that the angular injector provides and maintains a single instance of a service throughout the application.This ensures consistant state and behavior across the application.5.Communication between Components : Services can store and manage shared data or state,allowing components to exchange information indirectly through the service.6.State Management : Service can manage application state,including user authentication,preferences,or any other application-level-state.this centralized state management is crucial for complex applications.7.Encapsulation of Data and Logic : services encapsulate data and logic related to perticular feature or functionality. This encapsulation keeps the implementation details hidden and provides a clear interface for components to interact with. 8.API calls and External Interactions: services handle API calls and interactions with external systems .They abstract away the HTTP requests,webSocket communication,or any other form of interaction,making it easier to manage data exchange. ",
+        "code":""
+    }
+],
+"day1angular":[],
+"day2angular":[],
+"day3angular":[],
+"day4angular":[],
+"day5angular":[],
+"day6angular":[],
+"day7angular":[],
+
 "day1react":[
     {
         "id":1,
