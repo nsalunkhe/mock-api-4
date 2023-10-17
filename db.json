@@ -509,7 +509,7 @@
         "id":1,
         "question":"What is a closure in JavaScript? Provide an example.",
         "answer":"A closure can be defined as a JavaScript feature in which the inner function has access to the outer function variable. The closure has three scope chains listed as follows:Access to its own scope.Access to the variables of the outer function.Access to the global variables.",
-        "code":"https://drive.google.com/file/d/19VkXyykPBVCeu2zy8s-pjHyXM-DdytCC/view?usp=sharing"
+        "code":"https://drive.google.com/drive/folders/1vfHfvl6gcQ6WGrvvbFzmneqcf4CLMtAS?usp=sharing"
     },
     {
         "id":2,
@@ -586,7 +586,20 @@
 
 
 ],
-"day4js":[],
+"day4js":[
+    {
+        "id":1,
+        "question":"What is a callback function in JavaScript?How is it used to handle asynchronous operations?",
+        "answer":"A callback function in JavaScript is a function that is passed as an argument to another function,and it's intended to be called after the completion of a perticular task or operation.The idea behind callback function is to ensure that certain code dosent execute untill specific asynchronous operation has finished it's work.",
+        "code":"https://drive.google.com/file/d/1zdUNIsdMBZ029rdWwMjZ5KqePid4-P_H/view?usp=sharing"
+    },
+    {
+        "id":2,
+        "question":"Explain callback hell and how it can be mitigated or avoided?",
+        "answer":"Callback hell,also known as the pyramid of doom,is a situation that arise in javascript when dealing with multiple asynchronous operations using callbackfunctions.It occurs when you have multiple nested callback functions,making the code hard to read,manage,and maintain.This can lead to decreased code readability,difficulty in  error handeling and increased complexity. To mitigate or avoid callback hell ,several stratergies can be applied:Use named Functions : Instead of using anonymous callback functions , define named function and pass them as callbacks.This approch improves code readability.2.Modularization and refracting : Break down complex asynchronous operations into smaller ,manageable functions. By modularizing code and breaking it into smaller functions you can reduce the nesting and improve readability.3.Use Promises : Utilize Promises to chain asynchronous operations in a more structured way,making the code easier to read and manage.4.Async Await : Take advantage of the async/await syntax which provides a more asynchronous like structure for handeling asynchronous operations making the code more readable.  ",
+        "code":""
+    }
+],
 "day5js":[],
 "day6js":[],
 "day7js":[],
