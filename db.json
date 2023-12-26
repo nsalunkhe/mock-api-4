@@ -313,7 +313,38 @@
     }
 ],
 "day7react":[],
-"fastReact":[],
+"fastReact":[
+    {
+        "id":1,
+        "question":"What is React",
+        "answer":"React.js is a open-source-js library used to build user interfaces(UI) for web applications. It is developed by Jordan Walke (Facebook) and maintained by community of developers . one of the main difference between React.js and other frameworks is it's approach to rendering it uses Virtual Dom instead of directly manipulating the browsers Dom . React.js can update the ui more efficiently by only updating the parts of the page that have changed ,rather than updating the entire page .React.js focus on buildingreusable components React components are independent ,reusable pieces of code that can be combined to create complex UI's. this enables developers to write less code and makes it easier .overall React.js is a powerfull tool for building dynamic ,responsive and scalable user interfaces for web applications .It is based on declerative programming ,Which means that you describe what you want the UI look like and react.js handles the updates and rendering . It can be used to build single page applications (SPA's) which are web applications that load a single HTML page and dynamically update the content as the user interacts with the application . React.js is used by many popular websites and applications including Facebook,Instagram,NetFlix,Airbnb.It has large active comunity of developers who contribute to the library. ",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"What is JSX?",
+        "answer":"jsx stands for javascript XML. that allows you to write HTML like code in your jacascript.it looks similar to HTML but it is not HTML instead it is a syntax extension that allows you do define React elements which is lightweight description of what should be displayed on the screen. it is not required in react and you can use plain js to define UI if you prefer .but jsx has some benifits like 1.it improves readability 2.better performance 3.Intuative syntax(better understanding of syntax) 4.It is faster and more efficient. 5.Rather than writing React.createElement we write plane HTML inside our JS itself.6.There are tools like Babel which converts our JSX code to simple React.createElement Code and then it rendered in the webpage.Important : JSX is not a feature of react.Browsers cant directly Understans JSX it uses Babel to convert the code to React.createElement",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"How JSX code will get converted into React.createElement code? also explain how Babel will help in this conversion?",
+        "answer":"When you write a JSX code it needs to be transformed into equivalent javascript code that uses React.createElement.Babel is popular JavaScript compiler that performs this transformation.Step:-1. Babel Configuration: When we create new react app using Create React App (CRA) , Babel is automatically configured and installed as a part of the project.Step-2:JSX is not a valid JavaScript so BAbel needs to convert it into a format that the JavaScript engine can understand. Step-3: AST Generation : BAbel generates Abstract Syntax Tree(AST) from the parsed JSX code.The AST is a hierarchical representation of the code's structure.the AST is in OBJECT form.Step-4: Transforming JSX: Babel then transforms the JSX AST into equivalent JavaScript code. It replaces JSx elements with 'React.createElement' calls with the element type,props and the child elements as arguments.Step-5:Integration with React: The transformed code assumes that 'React is available in the scope. This is why it's common to import 'React' at the top of your files.",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"What is the difference between State and Props?",
+        "answer":"Props:1. props are used to customize a component and pass data from one component to another.2.props are read only and should not be modified directly within a component.3. props are passed down from a parent component to child component.4.props are accessable via this.props within a class component or as an argument to a functional component. 5. props are used for one way data flow from parent to child components.______State:1.state is used to manage data within a component and trigger a re-render of the component when updated.2.state is mutable and can be updated within a component using setState().3.state is accessible via this.state within a class component or as a hook useState in a functional component.4.state is managed within a component and can be passed down to child components as props.5.state is used for managing internal state within a component and triggering a re-render when necessary.",
+        "code":"https://drive.google.com/file/d/1QoIZhMxzpzAHjolVPve_I9PWLmRsAEbc/view?usp=sharing"
+    },
+    {
+        "id":5,
+        "question":"How do you use conditional rendering in React.js and what are Some common patterns for doing so?",
+        "answer":"Conditional Rendering: ability to render diffirent components or content based on certain conditions 1.if else 2.Ternary Operator 3.Logical Operator 4.Switch Statements . ----> follow the code to understand how these operators works",
+        "code":"https://drive.google.com/file/d/10SjN25bIq-XZHhrskfgK_w51vYAIrfHJ/view?usp=sharing"
+    }
+],
 "day1js":[
     {
         "id":1,
