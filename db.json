@@ -215,6 +215,36 @@
         "question":"What is the significance of the Key prop in React.js , and how can it be used in combination with conditional rendering to optimize performance?",
         "answer":"In React Key prop is special attribute to help to identify which items have changed,been added,or been removed from a list of rendered items. when a list of elements is rendered ,React assigns a unique identifier to each element in the form of key .this allows react to track each element and determine whether it has been ,updated ,moved or deleted . without key react may be forced to re-render the entire list even if only one item has changed which can result in performance issue.",
         "code":"https://drive.google.com/file/d/1_Zc-4SbmAn8UKHp1g2gn5K00GL3jai6A/view?usp=sharing"
+    },
+    {
+        "id":8,
+        "question":"Discuss React Hooks and name some hooks you know with use cases?",
+        "answer":"There are some core React hooks that covere wide range of use cases.1.useState:The useState hook is one of the most fundamental and wdely used React Hook.It allows functional components to manage and update their local state.The useState hook returns an array with two elements : the current state value and a function that lets you update it.2.useEffect Hook : The useEffect hook is a powerful and versatile React hook used for handeling side effects in functional components.Side effects can include data fetching,subscriptions,manual DOM manipulations, or any asynchronous operations that need to be performed in a components lifecycle.useEffect replaces lifecycle methods like 'componentDidMount','componentDidUpdate',and 'componentsWillUnmount' in class components.useEffect contains 2 arguments. The first argument is a function containing the code for the side effect.The second argument is an array of dependencies.If any of those dependencies change,the effect will be re-run.If the dependencies array is empty,the effect runs once when the components mounts.Running Effects The function provided to 'useEffect' runs after the render is committed to the screen.3.useContext hook: The useContext hook is a React hook used in context api(used to share values like props between components in a direct way avoiding props drilling.) The useContext hook is React Hook that allows functional component to subscribe to React context without the need for a consumer component.Context provides a way to pass data through the component tree without having to pass props down manually at every level.4.UseReducer Hook: The useReducer hook is another powerful hook in React that is used for more complex state management.It is perticularly useful when the next state depends on the previous state and when state transitions involves more complex logic. The useReducer hook is often employed as an alternate to useState when managing more intricate logic",
+        "code":"https://drive.google.com/drive/folders/1Q_X4DE8zSKPZwxfPLVNr7RrTKafmDmNF?usp=sharing"
+    },
+    {
+        "id":9,
+        "question":"What useEffect Hook do?",
+        "answer":"In class components there are lifecycle methods like mounting updating in order to create diffirent types of side effects but inside of functional component we dont have mounting or unmounting or any lifecycle hooks at all. all we have is a hook call useEffect.we can import this hook from react. and if we want to do a side effect whenever something is happends we can use useEffect. useEffect hook comes with a arrow function everything inside that function will execute on every re-render.so whenever you want to do something after your component mounts or specific resource on your page changes.the second parameter of useEffect is going to be an array whatever you pass into this array is going to be values whenever these values change your hook is going to run.",
+        "code":"https://drive.google.com/drive/folders/1lXfsvXWoSNZ0i2oc6-kMWGikfazB2GCu?usp=sharing"
+    },
+    {
+        "id":10,
+        "question":"What useReducer Hook do?",
+        "answer":"Like useState useReducer is also used to manage the state of and re-render the component whenever the state changes the idea behind useReducer is to add concrete way to handle complex state so it gives you set actions that you can perform on your state and it convert the state into new state based on the action. useReducer has similar pattern to Redux.1.useReducer function comes with two diffirent parameters i.We are going to have a reducer which is a function that we perform on a state to get a new state.ii. InitialValue. return value is going to be two portions 1.state 2.function call dispatch(this function is what we call to update our state) the reducer function takes two parameters state and action(this action we pass to this dispatch function-so whenever we call dispatch with is gonna get to the action variable and the current state is going to be with state variable and reducer is just going to return the new updated state ",
+        "code":""
+    },
+    {
+        "id":11,
+        "question":"What useCallback Hook do?",
+        "answer":"The useCallback hook in react is used to memoize functions preventing them from being re-created on every render. usecallBack is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.it is useful when passing callbacks to optimized child components that rely on the reference equality to prevent innecessary renders.How to use 1.import useCallback from react 2.call useCallback which accepts a callback function is first parameter and array of dependency 2nd parameter (spacify the thing on which the function is depend)",
+        "code":"https://drive.google.com/drive/folders/1F45dT-ztWhPie2rwYWEnhSxsAqbgDbNX?usp=sharing"
+    },
+    {
+        "id":12,
+        "question":"What useRef Hook do?",
+        "answer":"useRef hook is used to create generic container which can hold a mutable value which will not re-render the components.this generic container do not cause re-renders when the data it stores changes at the same time it also remembers the stored data even after other state variables cause re-render of the component.unlike state variables ,changes to the current property of a ref object dont trigger re-renders. useRef returns a object with property current. Use: 1. Accessing and Modifying the DOM. 2.Persisting Values across Renders: values stored in useRef persist across renders without causing re-renders. this makes it suitable for holding values that need to persist across renders without affecting the component rendering",
+        "code":"https://drive.google.com/drive/folders/1k-vviwiw3TsMbrpB5GFpWHbwPmogCkJz?usp=sharing"
     }
 ],
 "day3react":[
@@ -251,7 +281,14 @@
     {
        "id":6,
        "question":"How does state management differ between class components and functional components in React?",
-       "answer":""
+       "answer":"Functional Component: Functional Components are just JavaScript functions that take props and return jsx. Functional components dont have a state but use the useState hook to achieve similar functionality. Functional components dont have lifecycle methods but they can use useEffect hook to achieve similar functionality.Functional components are more reusable as they are just functiona that can be easily reused across multiple components. Functional components are usually faster than class components.Functional components can not use this keyword.2.Class Components: Class components are classes that extend the react component class and have a render method.Class components have a state which is used to store data that can change over time.Class components have lifecycle methods which are methods that get called at diffirent points in the component's life cycle.Class components are less reusable due to the complex inheritance hierarchy and render methods.Class components are slower than functional components.It uses this keyword to refer to their own instance.",
+       "code":"https://drive.google.com/file/d/1aVGPlnl3-Fz0kNWNIRE-TAiZ6aCW7MWy/view?usp=sharing"
+    },
+    {
+        "id":7,
+        "question":"What are the keys in react and why are they important?",
+        "answer":"In React Key prop is special attribute to help to identify which items have changed,been added,or been removed from a list of rendered items. when a list of elements is rendered ,React assigns a unique identifier to each element in the form of key .this allows react to track each element and determine whether it has been ,updated ,moved or deleted . without key react may be forced to re-render the entire list even if only one item has changed which can result in performance issue.",
+        "code":"https://drive.google.com/file/d/1_Zc-4SbmAn8UKHp1g2gn5K00GL3jai6A/view?usp=sharing"
     }
 ],
 "day4react":[],
@@ -343,6 +380,23 @@
         "question":"How do you use conditional rendering in React.js and what are Some common patterns for doing so?",
         "answer":"Conditional Rendering: ability to render diffirent components or content based on certain conditions 1.if else 2.Ternary Operator 3.Logical Operator 4.Switch Statements . ----> follow the code to understand how these operators works",
         "code":"https://drive.google.com/file/d/10SjN25bIq-XZHhrskfgK_w51vYAIrfHJ/view?usp=sharing"
+    },
+    {
+        "id":6,
+        "question":" Explain the concept of props in React and alternative methods to transfer data without props.",
+        "answer":"In React, 'props' is short for 'properties,' and it refers to the mechanism for passing data from one component to amother. Props are fundamental part of the React component architecture and play a crucial role in building reusable and modular UI components.You can pass data using props from parent component to child component. child component recieve these values as props and can use them as needed.Child cannot directly modify the props received from their parent. Alternate methods to transfer the data without props 1.Redux(State Management Library).: Libraries like Redux provide a centralized state management solution.Components can connect to the global state and dispatch actions to modify it. This approach is suitable for larger application where state needs to be shared among many components.2.Context API: React's Context API allows you to share values like themes or authentication status between components without explicitely passing props through each level. It perticularly useful for passing down data that is needed by many components in the tree.",
+        "code":"https://drive.google.com/drive/folders/1RL0DCwC9fmm7adaRli3iyq-aeDAgJ6zN?usp=sharing"
+    },
+    {
+        "id":7,
+        "question":"How does React's component lifecycle work?",
+        "answer":"React Component go through a lifecycle during their existance, and understanding these lifecycle methods is crucial for building and managing the state and UI of a React application. The lifecycle methods can be grouped into three main phases 1.Mounting 2.Updating 3.Unmounting__1:Mounting:- This phase occurs when a component is being created and inserted into the DOM.Constructor: The constructor is called before a component is mounted . It is used for initializing state and binding event handlers.Static getDerivedStateFromProps:Ths method is invoked right before calling the render method. It recieves props and state as parameters and returns an object to update the state or null to indicate that no state update is necessary. render: The render method is responsible for returning the jsx that describes the UI of the component.componentDidMount: This method is called after the component is rendered into the dom.It is commonly used to trigger network requests,set up subscriptions,or perform other side effects.__2: Updating : This phase begins when a component is re-rendered as a result of changes to either its props or state.static getDerivedStateFromProps: Similar to the mounting phase , this method is called before rendering and you can update the state based on props changes.shouldComponentUpdate: This method is invoked before rendering when new props or state are being recieved. It can be used to optimize performance by preventing unnecessary renders. render: The render method is called to compute the updated output.getSnapshotBeforeUpdate: This method is called right before the changes from the Virtual DOM are to be reflected in the DOM.It enables the component to capture some information before the update.componentDidUpdate: This method is called after the component is re-rendered. It is used for performing side effects , like making network requests based on the updated state.__3.Unounting: This phase involves removing the component from the DOM.componentWillUnmount: This method is called right before the component is removed from the DOM. It is used for cleanup tasks like cancelling network requests or cleaning up subscriptions.__ Additionally there are a few other lifecycle methods that are considered unsafe and have been deprecated or will be deprecated in future in React versions: 1.UNSAFE_componentWillMount 2.UNSAFE_componentWillRecieveProps 3.UNSAFE_componentWillUpdate.These methods are automatically invoked by React at the appropriate stages of the component's lifecycle.React takes care of managing the componets's lifecycle, and developers can impliment these methods like useEffect is used for handeling side effects and managing the component lifecycle in functional components.",
+        "code":""     
+    },
+    {
+        "id":8,
+        "question":"Compare class and functional components in react.",
+        "answer":""
     }
 ],
 "day1js":[
