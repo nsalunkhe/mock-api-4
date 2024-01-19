@@ -686,7 +686,98 @@
         "code":""
     }
 ],
-"day5js":[],
+"day5js":[
+    {
+        "id":1,
+        "question":"What is Javascript?",
+        "answer":"1.JavaScript is High-level Dynamic interpreted Programming Language commonly used in web developement.2.It is used to add interactivity and functionality to web pages,web applications,making them more engaging and user friendly.3.It is created by Brendan Eich in 1995 when he was working at NetScape Communications.4.This language is supported by all major web browsers.5.this language also used in server side in Node.Js 6.this language has large active community of developers with numerous libraries and frameworks.7. Js runs natively on all major web browsers which means that it can be executed on the client side without required any additional software or plugins that makes it a versatile and accessible choice for building web applications.",
+        "code":""
+    },
+    {
+        "id":2,
+        "question":"What are the datatypes in js?",
+        "answer":"1. Primitive data-types:String,Number,boolean,undefined,symbol.2. Non primitive : object,function. Difference between these types: PRIMITIVE : 1.Immutable: Primitive value returns new value when you create a primitive value , a new piece of memory is allocated to store that value.the memory location is fixed and cannot be changed. if you assign new value to the same variable , new memory location is allocated for the new value. so thats why the primitive data-types are immutable because you cannot change the value stored in the original memory location once it has been created. to change the value of that variable you must need to assign new memory location and assign the new new value to that location. 2.It is stored by value : when a variable is assignd a value of primitive datatype, a copy of the value is created and stored in a memory eg. let num1=10 and let num2=num1 here num2 is assigned a copy of num1 and also remember that changes to one variable not affect other.3. It is faster to access :due to store by a value It is faster to access. Non-primitive data-types: 1. It is mutable  let person={name:'ABC'}  and person.name='DEF' 2. This is store by reference: After assigning value to variable the variable holds a reference to the memory location and if we change the original value then it also changes that location value. 3.Due to access by reference this is slower",
+        "code":""
+    },
+    {
+        "id":3,
+        "question":"What is the difference between var,let,const?",
+        "answer":"1.Var : a.used to declare variable with functional scope b.available within entire function including nested functions. c. variable declared with var are hoisted. var declared with var is moved to the top of the function or global scope regardless where the actual decleration appears in the code.d.console.log(myVar) you will get undefined var myVar=1. 2. LET : variable declared with let have block scope : Only available with that block they are declared in c.hoisting is not available d.you will get ReferenceError when you try to access the value before creation. 3.CONST : a const is used to declare variable that can not be reassigned.b.this is also used to declare variable with block scope.c. hoisting is not available d. const a=2; const a=3; console.log(a) will lead to TypeError: Assignment to constant variable. e. so due to unexpected behavior of var,let and const it is recommended to use let and const instead of var.",
+        "code":""
+    },
+    {
+        "id":4,
+        "question":"What is hoisting?",
+        "answer":"It is a behavior where variable and function declerations are moved at the top of their respective scope during the compilation phase even if they appear later in the code. use: you can access variable before you have been decleared in your code and js will recognize it. however it is generally considered good practice to declare variable and functions at the top of their scope to avoid confusion and improve code readability.It is important to note that only variable decleration is hoisted not assignment or initialization.",
+        "code":""
+    },
+    {
+        "id":5,
+        "question":"What is the temporal dead zone?",
+        "answer":"The Temporal Dead Zone is a concept in JS related to variable hoisting behavior introduced by the let and const decleration. In javascript , when you declare a variable using let and const . the variable is hoisted to the top of its containing block or scope, during the period between the start of the scope and the actual decleration, trying to access the variable results in a temporal dead zone in this zone , accessing the variable throws a ReferenceError.",
+        "code":""
+    },
+    {
+        "id":6,
+        "question":"What is block level and function level scope?",
+        "answer":"In javascript , scope refers to the context in which variables are declered and can be accessed. there are two main types of scope in javascript : Block level and Function-level 1.Bolck level : Introduced by let and const keywords : a block is typically defined by a pair of curly braces {} and can be a statement,a loop or any other code. 2.Functional Scope: introduced by the var, meaning they are only accessible within the function where they are defined.variables decleared with var are also hoisted to the top of their containing function,which means you can access them before their actual decleration.  ",
+        "code":""
+    },
+    {
+        "id":7,
+        "question":"what is closure and how it is used in javascript?",
+        "answer":"A closure can be defined as feature in which dinner function has access to the outer function variable. The closure has three scope chains listed as follows : 1.Access to its own scope 2. Access to the variables of the outer function 3. Access to the global variables.",
+        "code":"https://drive.google.com/drive/folders/1vfHfvl6gcQ6WGrvvbFzmneqcf4CLMtAS"
+    },
+    {
+        "id":8,
+        "question":"What is the lexical scoping in javascript?",
+        "answer":"Lexical scoping, also known as static sccoping, is a characterstic of how variable scope determined in programming language. In JavaScript, lexical scoping means that the scope of a variable is defined by its position within the source code's lexical structure that is the physical placement of code in the source file rather than the dynamic flow of the program.In other words, when a function is defined,it captures the scope in which it is defined,This captured scope is then used to resolve the scope chain when the function is invoked, regardless of where the function is actually called. This concept is often contrasted with dynamic scoping, where the scope is determined by the current execution context. ",
+        "code":""
+    },
+    {
+        "id":9,
+        "question":"What are the diffirent operators in javascript?",
+        "answer":"1.Arithmetic Operator: +,-,/,% 2.Comparison Operator: >=,<=,>,< 3.Assignment Operator: let a=10, a+=5 4.Unary Operator : let a=10 console.log(+a),(-a) 5.typeof: typeof(a) 6.Ternary: it is a short-hand way of writing if else statements like : a>5? a is greater than 5: a is less than 5",
+        "code":""
+    },
+    {
+        "id":10,
+        "question":"What is prototypic inheritance?",
+        "answer":"The JavaScript inheritance is a mechanism that allows us to create new classes on the basis of already existing classes. It provides flexibility to the child class to reuse the methods and variables of a parent class.It facilitates child class to acquire all the properties and behavior of its parent class.",
+        "code":"https://drive.google.com/file/d/1eprxbucUrZddiQ4yVEEDlPRQOD-BT9KJ/view"
+    },
+    {
+        "id":11,
+        "question":"can you explain == and ===?",
+        "answer":"Both are comparison operators == only check value not data-type eg. console.log(5=='5') -> true . Type corcion : js will attempt to convert one of the values to match the other based on set of implicit conversion rules. === Strict equality operator :both value and datatype check is there so console.log(5==='5') false ",
+        "code":""
+    },
+    {
+        "id":12,
+        "question":"What is higher order function?",
+        "answer":"A higher order function is a function that takes one or more functions as arguments or returns a function as result.",
+        "code":"https://drive.google.com/file/d/1Po-_V_9-uHOE7C7s3bPFbPesLKNhXeOs/view?usp=sharing"
+    },
+    {
+         "id":13,
+         "question":"what is client server model",
+         "answer":"When we type search url of any website on browser ---> browser sends that request to the server which hosting that website ---> the web server process that request --->  then web server sends the requested resource to the browser.",
+         "code":""
+    },
+    {
+        "id":14,
+        "question":"what are promises in javascript?",
+        "answer":"  In JavaScript , promises are mechanism for handeling asynchronous operations. they provide a way to work with asynchronous code in a more organized and readable manner. promises in javascript has three states : Pending : The initial state neither fullfilled nor rejected .2. Fullfilled : The operation completed successfully, and the promise has a resulting value. 3.Rejected : The operation failed, and the promise has a reason for the failure .then method is used to chaining promose with fullfilled data and you can pass as many times as you want then catch is used to catch error.so we are using promises to avoid callback hell. we can also use async await function to avoid callback hell.",
+        "code":""     
+    },
+    {
+        "id":15,
+        "question":"explain oops concepts like classes and objects,inheritance,polymorphism,encapsulation,abstraction?", 
+        "answer":"refer day3",
+        "code":""
+    }
+],
 "day6js":[],
 "day7js":[],
 
@@ -706,7 +797,7 @@
     {
         "id":3,
         "question":"What is the purpose of a doctype declaration in HTML?",
-        "answer":"A doctype declaration in HTML is used to specify the version of HTML being used in a web document.It is placed at the very beginning of an HTML file, before the opening <html> tag. The primary purpose of a doctype declaration is to inform the web browser or parser about the markup language and version in which the document is written.",
+        "answer":"A doctype declaration in HTML is used to specify the version of HTML being used in a web document.It is placed at the very beginning of an HTML file, before the opening <html> tag. The primary purpose of a doctype declaration is to inform the web browser or parser about the markup language and version in which the document is written. ",
         "code":""
     },
     {
