@@ -771,6 +771,11 @@
         "answer":"  In JavaScript , promises are mechanism for handeling asynchronous operations. they provide a way to work with asynchronous code in a more organized and readable manner. promises in javascript has three states : Pending : The initial state neither fullfilled nor rejected .2. Fullfilled : The operation completed successfully, and the promise has a resulting value. 3.Rejected : The operation failed, and the promise has a reason for the failure .then method is used to chaining promose with fullfilled data and you can pass as many times as you want then catch is used to catch error.so we are using promises to avoid callback hell. we can also use async await function to avoid callback hell.",
         "code":""     
     },
+    
+    
+    
+    
+    
     {
         "id":15,
         "question":"explain oops concepts like classes and objects,inheritance,polymorphism,encapsulation,abstraction?", 
